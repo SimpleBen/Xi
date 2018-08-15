@@ -3310,11 +3310,14 @@ body {
 .hobby-cap {
     display: inherit;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 400;
+    margin-top: 0.2em;
+    margin-bottom: 0.3em;
 }
 .hobby-p {
-    font-size: 0.1em;
+    font-size: 0.7em;
+    text-align: center;
 }
 .hobby-item {
     padding: 0px 30px;

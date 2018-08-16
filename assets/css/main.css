@@ -2871,7 +2871,7 @@ input[type="submit"].disabled, input[type="submit"]:disabled,  input[type="reset
 	justify-content: flex-start;
 }
 .panel.spotlight.left .content {
-	background-image: linear-gradient(-90deg, transparent 0%, rgba(0, 0, 0, 0.125) 30%, rgba(0, 0, 0, 0.175) 50%);
+	/*background-image: linear-gradient(-90deg, transparent 0%, rgba(0, 0, 0, 0.125) 30%, rgba(0, 0, 0, 0.175) 50%);*/
 }
 .panel.spotlight.right {
 	-moz-justify-content: -moz-flex-end;
@@ -3161,7 +3161,7 @@ body {
     position: relative;
     float: left;
     list-style: none;
-    font-size: 18px;
+    font-size: 17px;
     padding: 0;
     margin: 0 20px;
     cursor: pointer;

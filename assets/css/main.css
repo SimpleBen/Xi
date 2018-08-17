@@ -236,8 +236,8 @@ html {
 }
 }
 body, input, select, textarea {
-	color: rgba(255, 255, 255, 0.75);
-	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	color: rgba(255, 255, 255, 0.71);
+	font-family: "Avenir Next", Helvetica, sans-serif;
 	font-size: 1rem;
 	line-height: 1.65;
 }
@@ -255,8 +255,8 @@ a:hover {
 	color: #ffe4b4;
 }
 strong, b {
-	color: rgba(255, 255, 255, 0.875);
-	font-weight: 400;
+	color: rgba(255, 255, 255, 0.75);
+	font-weight: 600;
 }
 em, i {
 	font-style: italic;
@@ -270,7 +270,7 @@ body.is-ie p {
 h1, h2, h3, h4, h5, h6 {
 	color: rgba(255, 255, 255, 0.875);
 	font-family: Montserrat, Arial, Helvetica, sans-serif;
-	margin: 0 0 0.75rem 0;
+	margin: 0 0 0.3rem 0;
 	/* letter-spacing: -0.05em; */
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -295,12 +295,14 @@ h1.major:after, h2.major:after, h3.major:after {
 h1 {
 	font-size: 3rem;
 	line-height: 1.2;
+	font-weight: 300;
 }
 h1.major {
 	margin: 0 0 2.625rem 0;
 }
 h1.major:after {
 	bottom: -1.325rem;
+
 }
 h2 {
 	font-size: 1.75rem;
@@ -325,7 +327,7 @@ h4 {
 	font-size: 1rem;
 }
 h5 {
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 }
 h6 {
 	font-size: 0.7rem;
@@ -939,7 +941,6 @@ ul.contact-icons > li:before {
 	border-radius: 2.25rem;
 	background-color: white;
 	color: #2e2b37;
-	cursor: default;
 	font-size: 1.125rem;
 	margin-right: 1rem;
 	text-align: center;
@@ -1205,9 +1206,9 @@ input[type="submit"]:hover,  input[type="reset"]:hover,  input[type="button"]:ho
     color: #FFFFFF !important;
     background: rgba(255, 255, 255, 0.2);
 }
-input[type="submit"]:active,  input[type="reset"]:active,  input[type="button"]:active,  button:active,  .button:active {
+/*input[type="submit"]:active,  input[type="reset"]:active,  input[type="button"]:active,  button:active,  .button:active {
 	background-color: rgba(255, 228, 180, 0.125);
-}
+}*/
 input[type="submit"].icon:before,  input[type="reset"].icon:before,  input[type="button"].icon:before,  button.icon:before,  .button.icon:before {
 	display: inline-block;
 	position: relative;
@@ -1869,7 +1870,7 @@ input[type="submit"].disabled, input[type="submit"]:disabled,  input[type="reset
 	background-color: #726193;
 }
 .panel > *.color2 {
-	background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+	/*background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));*/
 	background-size: 128px 128px, auto;
 	background-color: #e37b7c;
 }
@@ -2842,7 +2843,7 @@ input[type="submit"].disabled, input[type="submit"]:disabled,  input[type="reset
 	-webkit-justify-content: center;
 	-ms-justify-content: center;
 	justify-content: center;
-	padding: 3.5rem 3.5rem 2rem 3.5rem;
+	padding: 3.5rem 3rem 2rem 3.5rem;
 }
 .panel.spotlight .image {
 	position: absolute;
@@ -3163,7 +3164,7 @@ body {
     list-style: none;
     font-size: 17px;
     padding: 0;
-    margin: 0 20px;
+    margin: 0 15px;
     cursor: pointer;
     color: transparent !important;
     background-size: cover;
@@ -3325,7 +3326,55 @@ body {
 }
 img.profile-photo {
     width: 100%;
+    -moz-transition: -moz-transform 0.2s ease-in-out;
+	-webkit-transition: -webkit-transform 0.2s ease-in-out;
+	-ms-transition: -ms-transform 0.2s ease-in-out;
+	transition: transform 0.2s ease-in-out;
 }
+
+img.profile-photo:after {
+	-moz-transition: opacity 0.2s ease-in-out;
+	-webkit-transition: opacity 0.2s ease-in-out;
+	-ms-transition: opacity 0.2s ease-in-out;
+	transition: opacity 0.2s ease-in-out;
+}
+
+img.profile-photo:before {
+	background: #000;
+	-moz-pointer-events: none;
+	-webkit-pointer-events: none;
+	-ms-pointer-events: none;
+	pointer-events: none;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 1;
+	-moz-transition: opacity 0.2s ease-in-out;
+	-webkit-transition: opacity 0.2s ease-in-out;
+	-ms-transition: opacity 0.2s ease-in-out;
+	transition: opacity 0.2s ease-in-out;
+}
+
+img.profile-photo:hover {
+	-moz-transform: scale(1.025);
+	-webkit-transform: scale(1.025);
+	-ms-transform: scale(1.025);
+	transform: scale(1.025);
+}
+
+img.profile-photo:hover::before {
+	opacity: 0.6;
+}
+
+.image.filtered:hover > .mini-brief {
+	color: #FFF;
+	opacity: 1;
+}
+
 .mask{
 	width: 100%;
 	height: 100%;

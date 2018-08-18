@@ -30,7 +30,10 @@ $(function(){
             }else{
                 $(".project-aside").removeClass('project-aside-float');
             }
-            if($('.top-nav').css('opacity')>0 | whs < 200){$('.top-nav').css('opacity',(100-whs)/100);}
+            if($('.top-nav').css('opacity')>0 || whs < 200){
+                $('.top-nav').css('opacity',(100-whs)/100);
+                $('.top-nav').show();
+            }else{$('.top-nav').hide();}
         }
         toggleSelect(whs);
     });

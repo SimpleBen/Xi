@@ -26,29 +26,6 @@
     </div>
 
     <span class="project-nav-toggle"><i></i></span>
-    <aside class="project-aside">
-            <button onclick="location.href='index.html'" type="button" class="back-btn">Back</button>
-            <nav class="project-main-menu">
-                <ul class="menu-ul">
-                    <li><a href="#Overview">Overview</a></li>
-                    <li><a href="#Objective" class="sub p1">Objective</a></li>
-                    <li><a href="#Process" class="sub p2">Process</a></li>
-                    <li class="font_padding"><a href="#Research">Research</a></li>
-                    <li><a href="#Research_Goal" class="sub p3">Research Goal</a></li>
-                    <li><a href="#Contextual_Inquiry" class="sub p4">Contextul Inquiry</a></li>
-                    <li><a href="#Affinity_Mapping" class="sub p5">Affinity Mapping</a></li>
-                    <li class="font_padding"><a href="#Design">Design Iteration</a></li>
-                    <li><a href="#Ideation" class="sub p6">Ideation</a></li>
-                    <li><a href="#Journey_Map" class="sub p7">Journey Map</a></li>
-                    <li><a href="#Iteration" class="sub p8">Iteration</a></li>
-                    <li class="font_padding"><a href="#Usability_Testing">Usability Testing</a></li>
-                    <li><a href="#Refinement" class="sub p9">Refinement</a></li>
-                    <li class="font_padding"><a href="#Final_Design">Final Design</a></li>
-                    <li><a href="#User_Flow" class="sub p10">User Flow</a></li>
-                    <li><a href="#Prototype" class="sub p11">Prototype</a></li>
-                </ul>
-            </nav>
-    </aside>
 
     <div id="project-main">
             <img class="top-img" src="assets/img/finger/overview.png">
@@ -84,122 +61,26 @@
                     <p class="project-desc">Finger Proximity has two main parts of the hardware: A ring and 4 proximity sensors. The distance figures received from sensors will be relayed to the computer for data processing.</p>
                     <img style="width:100%" src="assets/img/finger/hardware design.png">
                     <h3 class="overview_subtitle" id="Ring_Design">RING DESIGN</h3>
-                        <p class="project-desc">- Understand users' needs in depth under real life context.<br>
-                        - The utility and usability of the application to support navigation by travelers with different physical abilities.<br><br>
-                        <img style="width:100%" src="assets/img/gatepal/Research Goal.png"></p>
-                    <h3 class="overview_subtitle" id="Contextual_Inquiry">CONTEXTUAL INQUIRY</h3>
-                         <p class="project-desc">The user tasks we designed is displayed below. The whole process was <strong>audio and video recorded</strong>. And we used <strong>think aloud method</strong> to gather more information about users' behavior.</p> 
-                         <img style="width: 100%" class="project_img" src="assets/img/gatepal/User Tasks.png">
-                    <h3 class="overview_subtitle" id="Affinity_Mapping">AFFINITY MAPPING</h3>
-                        <p class="project-desc">Based on the 8 participants' recording, Elaine and I independently transcribed and summarized the insights. And then our codes were discussed, modified, and combined. After using affinity mapping, insights were categorized to 3 major parts - usability and utility of the navigational delivery functions, usability of generic information design and information related to users's needs for facilitating decision making.</p>
-                        <img style="width:100%" src="assets/img/gatepal/affinity mapping.png">
+                        <p class="project-desc">For different hand poses, we want to recognize it by four distance figures collected from four proximity sensors. So the goal is to design a thumb-mounted ring with four proximity sensors and maximum the difference between four figures, that is try to differentiate the locations of the four proximity sensors.</p>
+                        <img style="width:30%" src="assets/img/finger/Ring Design.png">
+                </div>
+                       
 
-
-
-                <div id="Design">
-                    <h2 class="page-header">DESIGN ITERATION</h2>
+                <div id="Scenario">
+                    <h2 class="page-header">SCENARIO</h2>
                     <hr>
-                    <h3 class="overview_subtitle" id="Ideation">Ideation</h3>
-                        <p class="project-desc">According to the research results, we found that users not only need <strong>directional navigation</strong> which is provided in most navigation applications. More importantly, they also need <strong>behavior navigation</strong>. That means, we should provide seamless navigation experience of what users can do for the next step and more information to facilitate their behavior decision making.<br><br>
-                        The <strong>COMPLEXITY</strong> of behavior navigation is that under the context of the airport, users need to make several levels of decisions (unlike most navigation application, users only need to decide origin and destination).<br> 
-                        First, users need to decide what activities they want to do. Under the context of airport, activities include mandatory activities(check-in, security check, gate) and exploratory activities(shop, dine, restroom, etc.).<br>
-                        Then, multiple places/ destinations can be chosen within one activity.  For instance, if users choose security check, they can choose 3 options among south, north, or main security check according to their needs.<br>
-                        The last hierarchy is that users can choose different routes from one decision point to another.<br>
-                        The hierarchy of decision making is as below: </p>
-                        <img style="width:100%" src="assets/img/gatepal/DecisionMaking.png"><br>
-
-                    <h3 class="overview_subtitle" id="Journey_Map">Journey Map</h3>
-                        <p class="project-desc">According to the users needs from research result, we drew journey map based on the hierarchy of decision making and marked information that users need for each decision making steps. <br>
-                        <img style="width:100%" src="assets/img/gatepal/journey map.png"><br></p>
-
-                    <h3 class="overview_subtitle" id="Iteration">Design Iteration</h3>
-                        <div class="page-content">
-                        <ul class="row">
-                            <ul class="card_hub">
-                                <div class="card">
-                                    <div class="gifcontainer">
-                                        <img src="assets/img/gatepal/interaction/make decision.gif">
-                                    </div>
-                                </div>
-                            </ul>
-                            <ul class="card_hub">
-                                <div>
-                                    <h4>Mandatory Activity<br>——</h4>
-                                    <h5>Customize activity, destination, route choices</h5>
-                                    <p>Users can select their preferred activities, routes based on the time Info and accessibility info. We automatically recommends two routes - wheelchair friendly or not. Instead of just providing total time info, we provide walking time(which can be customized in the menu) and estimate waiting time to increase their confidence.</p>
-                                </div>
-                            </ul>
-                        </ul>
-
-                         <ul class="row">
-                            <ul class="card_hub">
-                                <div class="card">
-                                    <div class="gifcontainer">
-                                        <img src="assets/img/gatepal/interaction/add amenity.gif">
-                                    </div>
-                                </div>
-                            </ul>
-                            <ul class="card_hub">
-                                <div>
-                                    <h4>Exploratory Activity<br>——</h4>
-                                    <h5>Add amenities on their way to gate</h5>
-                                    <p>Users can add restaurants, shops or restrooms on their way to gate. Considering the final goal is more important to users(e.g. get to check in counter), the app provides total time info as references.</p>
-                                </div>
-                            </ul>
-                        </ul>
-
-                        <ul class="row">
-                            <ul class="card_hub">
-                                <div class="card">
-                                    <div class="gifcontainer">
-                                        <img src="assets/img/gatepal/interaction/behavior nav.gif">
-                                    </div>
-                                </div>
-                            </ul>
-                            <ul class="card_hub">
-                                <div>
-                                    <h4>Destination Behavior Nav<br>——</h4>
-                                    <h5>Provide more info after you arrive at destination</h5>
-                                    <p>The app will give you notification after you've arrived at the destination. And if you need more information about the destination, such as specific direction, things to prepare, the app will give you step by step behavior navigation.</p>
-                                </div>
-                            </ul>
-                        </ul>
-
-                        <ul class="row">
-                            <ul class="card_hub">
-                                <div class="card">
-                                    <div class="gifcontainer">
-                                        <img src="assets/img/gatepal/interaction/3mode.gif">
-                                    </div>
-                                </div>
-                            </ul>
-                            <ul class="card_hub">
-                                <div>
-                                    <h4>Three Mode<br>——</h4>
-                                    <h5>Get to gate, explore amenities, flight info</h5>
-                                    <p>Mandatory and exploratory activities can be chosen in two modes so that users can focus on mandatory activities when time is emergent. If they have time to look around, they can use explore mode to find restaurants, shops and restrooms. Besides, users can get flight info in real time using the third mode. </p>
-                                </div>
-                            </ul>
-                        </ul> 
-                    </div>
+                    <p class="project-desc">Due to the fast and high accurate of the current method, it can be applied to T9 Text Input<br>
+                        - The user can note numbers down without social inappropriateness.<br>
+                        <img style="width:100%" src="assets/img/finger/scenario1.png">
+                        - Play a game like Play-Snake by using sign language only.<br>
+                        <img style="width:100%" src="assets/img/finger/scenario2.png"></p>
                 </div>
 
-                <div id="Usability_Testing">
-                    <h2 class="page-header">USABILITY TESTING</h2>
+                <div id="User Study">
+                    <h2 class="page-header">USER STUDY</h2>
                     <hr>
-                    <h3 class="overview_subtitle" id="Refinement">Refinement</h3>
+                    <p class="project-desc">I implemented user study interface where the real-time classification results were given and conducted user study to evaluate the accuracy of the whole system.</P>
                 </div>
-
-                <div id="Final_Design">
-                    <h2 class="page-header">FINAL DESIGN</h2>
-                    <hr>
-                    <h3 class="overview_subtitle" id="User_Flow">User Flow</h3>
-                        <img style="width:100%" src="assets/img/gatepal/User Flow.png">
-
-                    <h3 class="overview_subtitle" id="Prototype">Prototype</h3>
-                </div>
-
-
 
             </div>
         </div>

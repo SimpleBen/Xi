@@ -3136,13 +3136,20 @@ body {
 
 
   /* Nav */
-  .top-nav {
+.top-nav {
     width: 800px;
     height: 15%;
-    position: fixed;
     top: calc( 5% - 8px );
     left: calc( 50% - 400px);
 }
+
+.buttom-nav{
+	width: 500px;
+	height: 70px;
+	bottom: 10%;
+	margin: 0 auto;
+}
+
 .logo {
     width: 4em;
     height: 2em;

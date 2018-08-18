@@ -31,8 +31,8 @@ img{
 #project-main {
     background: #FFF;
     padding: 0px;
-    margin-top: 240px;
-    margin-bottom: 100px;
+    margin-top: calc(248px - 20%);
+    margin-bottom: 50px;
     color: #000110;
 }
 .project-narrow-content{

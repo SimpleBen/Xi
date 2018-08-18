@@ -24,8 +24,8 @@
       <button onclick="location.href='index.html'" type="button" class="back-btn">Back</button>
       <nav class="project-main-menu">
         <ul class="menu-ul">
-          <li><a href="#Overview">Overview</a></li>
-          <li><a href="#Objective" class="sub p1">Objective</a></li>
+          <li class="font_padding"><a href="#Overview">Overview</a></li>
+            <li><a href="#Objective" class="sub p1">Objective</a></li>
             <li><a href="#Process" class="sub p2">Process</a></li>
           <li class="font_padding"><a href="#Research">Research</a></li>
             <li><a href="#Literature_Review" class="sub p3">Literature Review</a></li>
@@ -53,20 +53,20 @@
                     <h2 class="page-header">OVERVIEW</h2> 
                     <hr>
                     <h3 class="overview_subtitle b1" id="Objective">OBJECTIVE</h3>
-                        <p class="project-desc">​Information graphics are widely used to convey messages and present insights in data effectively. However, creating expressive data-driven infographics remains a great challenge for general users without design expertise. Our target is to enables users to easily create data-driven infographics using our visualization design tool. Not only for graphic designers or visualization experts, but also for data reports or business dashboards. After releasing version 1.0 on Microsoft Office Store, we want to <strong>evaluate its usability and utility for general users</strong>.<br><br>
+                        <p class="project-desc">​Information graphics are widely used to convey messages and present insights in data effectively. However, creating expressive data-driven infographics remains a great challenge for general users without design expertise. <b>Our target is to enables users to easily create data-driven infographics using our visualization design tool.</b> Not only for graphic designers or visualization experts, but also for data reports or business dashboards. After releasing version 1.0 on Microsoft Office Store, we want to evaluate its usability and utility for general users.<br><br>
                         Following is an example of using our tool to show tablets' sales data. It starts from the plain column chart to the embellished expressive infographic. (Left is the key steps; right is the whole process)</p>
                         <div class="row">
-                            <div>
+                            <ul class="col-lg-6 col-md-6">
                                 <img style="width: 100%;" src="assets/img/infonice/key steps.png">
-                            </div>
-                            <div>
+                            </ul>
+                            <ul class="col-lg-6 col-md-6">
                                 <img style="width: 100%;" src="assets/img/infonice/overview.gif">
-                            </div>
+                            </ul>
                         </div>
-                    <h3 class="overview_subtitle b2" id="Process">PROCESS</h3>
-                        <img style = "width:100%" src="assets/img/infonice/process.png">
+                    <!--<h3 class="overview_subtitle b2" id="Process">PROCESS</h3>
+                        <img style = "width:100%" src="assets/img/infonice/process.png">-->
                     <div class="row">
-                        <div class="">
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                             <h3 class="overview_subtitle">MY ROLE</h3>
                                 <h4 class="mini-title">Research</h4>
                                     <p class="project-desc">​Participated in competitive analysis, problem space and find design implications.</p>
@@ -77,9 +77,9 @@
                                 <h4 class="mini-title">Paper Writing</h4>
                                     <p class="project-desc">​Finished implementation and user study part of paper writing and crafted the images for paper. Our paper was published on <a href="https://chi2018.acm.org/" target="_blank">CHI 2018</a>!</p>
                         </div>
-                        <div class="">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                             <h3 class="overview_subtitle">DURATION</h3>
-                                <p class="project-desc">2017 Summer @ Microsoft Research Asia(MSRA)</p>
+                                <p class="project-desc">2017 Summer <br>@ Microsoft Research Asia(MSRA)</p>
                             <h3 class="overview_subtitle">PROJECT TEAM</h3>
                                 <p class="project-desc"><a href="http://www.cse.ust.hk/~ywangch/" target="_blank">Yun Wang</a> | Haidong Zhang | He Huang | Xi Chen | Qiufeng Yin | Zhitao Hou | Dongmei Zhang</p>
                             <h3 class="overview_subtitle">METHODS AND TOOLS</h3>
@@ -94,10 +94,9 @@
                     <hr>
                     <h3 class="overview_subtitle b3" id="Literature_Review">LITERATURE REVIEW</h3>
                         <h4 class="mini-title">Information Graphics or plain charts?</h4>
-                        <p class="project-desc">- Traditionally, visual embellishment are considered harmful. Visualizations are kept plain for the effectiveness of data analysis. <br>
-                        - Recently, researchers find infographics can enhance data communication: <br>
+                        <p class="project-desc">Traditionally, visual embellishment are considered harmful. Visualizations are kept plain for the effectiveness of data analysis. However, recently, researchers find infographics can enhance data communication: <br>
                         (1) Embellished charts have higher recall and can increase memorability. <br>
-                        (2) Figurative elements can effectively provide context of data.</p><br><br>
+                        (2) Figurative elements can effectively provide context of data.</p><br>
                         <h4 class="mini-title">Method for enhancing data communication</h4>
                         <p class="project-desc">Visual embellishment: Pictographic elements, textual annotations, elaborately designed figures and imageries.</p>
                     <h3 class="overview_subtitle b4" id="Competitive_Analysis">COMPETITIVE ANALYSIS</h3>
@@ -119,7 +118,7 @@
 
                     <h3 class="overview_subtitle b8" id="Interface_Design">INTERACTION DESIGN</h3>
                         <p class="project-desc">By clicking floating “Edit” button on the top-right corner, users can start designing their mark.<br>
-                        <img style="width:100%" src="assets/img/infonice/edit button.gif"><br></p>
+                        <img style="width:70%" src="assets/img/infonice/edit button.gif"><br></p>
 
                      <h3 class="overview_subtitle b9" id="Interface_Design">INTERFACE DESIGN</h3>
                         <img style="width:100%" src="assets/img/infonice/interface design.png"><br></p>
@@ -131,7 +130,7 @@
                     <hr>
                     <h3 class="overview_subtitle b10" id="Usability_Testing">Within-subject Comparative Usability Testing</h3>
                          <h4 class="mini-title">Why This Method?</h4>
-                             <p class="project-desc">On the one hand, we want to understand the useful- ness and usability of InfoNice. Moreover, we would like to understand the acceptability of designer-oriented infographics authoring tools for general users. So we compared InfoNice with data-driven guides (DDG), which is a representative of the tools optimized for designers.</p><br><br>
+                             <p class="project-desc">On the one hand, we want to understand the useful- ness and usability of InfoNice. Moreover, we would like to understand the acceptability of designer-oriented infographics authoring tools for general users. So we compared InfoNice with data-driven guides (DDG), which is a representative of the tools optimized for designers.</p><br>
 
                         <h4 class="mini-title">Research Process</h4>
                             <p class="project-desc">(<a href="https://docs.google.com/document/d/1T9faOARssuXJ-_si4imtlP-lCXExrGtAp7hd91KG17I/edit" target="_blank">Click to see more details about Research Plan and Research Process</a>)</p>

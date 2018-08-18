@@ -948,7 +948,15 @@ ul.contact-icons > li:before {
 	text-align: center;
 	vertical-align: middle;
 	cursor: pointer;
+	transition: all 0.3s;
 }
+
+ul.contact-icons > li:hover::before {
+	background-color: #8fa0ff;
+	transition: all 0.3s;
+	color: white !important;
+}
+
 body.is-ie ul.contact-icons > li:before {
 	line-height: 2.125;
 }

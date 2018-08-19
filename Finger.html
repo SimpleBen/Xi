@@ -7,9 +7,8 @@
 <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="assets/css/project.css">
+<link rel="stylesheet" href="assets/css/zoom.css">
 
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/project.js"></script>
 </head>
 <body>
 
@@ -28,7 +27,7 @@
     <span class="project-nav-toggle"><i></i></span>
 
     <div id="project-main">
-            <img class="top-img" src="assets/img/finger/overview.png">
+            <img class="top-img" src="assets/img/finger/overview.png" data-action="zoom">
             <div class="project-narrow-content" >
                 <div id="Overview">
                     <h2 class="page-header">OVERVIEW</h2> 
@@ -59,10 +58,10 @@
                     <h2 class="page-header">HARDWARE DESIGN</h2> 
                     <hr>
                     <p class="project-desc">Finger Proximity has two main parts of the hardware: A ring and 4 proximity sensors. The distance figures received from sensors will be relayed to the computer for data processing.</p>
-                    <img style="width:100%" src="assets/img/finger/hardware design.png">
+                    <img style="width:100%" src="assets/img/finger/hardware design.png" data-action="zoom">
                     <h3 class="overview_subtitle" id="Ring_Design">RING DESIGN</h3>
                         <p class="project-desc">For different hand poses, we want to recognize it by four distance figures collected from four proximity sensors. So the goal is to design a thumb-mounted ring with four proximity sensors and maximum the difference between four figures, that is try to differentiate the locations of the four proximity sensors.</p>
-                        <img style="width:30%" src="assets/img/finger/Ring Design.png">
+                        <img style="width:30%" src="assets/img/finger/Ring Design.png" data-action="zoom">
                 </div>
                        
 
@@ -71,9 +70,9 @@
                     <hr>
                     <p class="project-desc">Due to the fast and high accurate of the current method, it can be applied to T9 Text Input<br>
                         - The user can note numbers down without social inappropriateness.<br>
-                        <img style="width:100%" src="assets/img/finger/scenario1.png">
+                        <img style="width:100%" src="assets/img/finger/scenario1.png" data-action="zoom">
                         - Play a game like Play-Snake by using sign language only.<br>
-                        <img style="width:100%" src="assets/img/finger/scenario2.png"></p>
+                        <img style="width:100%" src="assets/img/finger/scenario2.png" data-action="zoom"></p>
                 </div>
 
                 <div id="User Study">
@@ -88,5 +87,10 @@
     </div>
 
 </body>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.2.0/js/transition.js"></script>
+<script src="assets/js/project.js"></script>
+<script src="assets/js/zoom.js"></script>
 </html>
 

@@ -689,7 +689,9 @@
 						$img.attr('src','assets/img/personalicon.png');
 
 						$.get(href,function(data){
-							$inner.html($(data).find('#project-main'));
+							$inner.html(()=>
+								($(data).find('#project-main').length)?$(data).find('#project-main'):$(data).find('#short-project-main')
+							);
 						});
 						loadjscssfile("assets/css/mini-project.css", "css");
 
@@ -786,8 +788,7 @@
 		
 						}, 125);
 
-						removejscssfile("assets/css/project.css", "css");
-						$('.modal .inner #project-main').fadeOut(500,()=>{$('.modal .inner').html('')});
+						$('.modal .inner #project-main').fadeOut(500,()=>{$('.modal .inner').html('');removejscssfile("assets/css/mini-project.css", "css");});
 		
 				});
 

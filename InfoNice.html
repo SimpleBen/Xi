@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="assets/css/project.css">
+<link rel="stylesheet" href="assets/css/zoom.css">
 
 <body>
 <div id="project-page">
@@ -47,7 +48,7 @@
     </aside>
 
     <div id="project-main">
-            <img class="top-img" src="assets/img/infonice/overview.png">
+            <img class="top-img" src="assets/img/infonice/overview.png" data-action="zoom">
             <div class="project-narrow-content" >
                 <div id="Overview">
                     <h2 class="page-header">OVERVIEW</h2> 
@@ -57,14 +58,14 @@
                         Following is an example of using our tool to show tablets' sales data. It starts from the plain column chart to the embellished expressive infographic. (Left is the key steps; right is the whole process)</p>
                         <div class="row">
                             <ul class="col-lg-6 col-md-6">
-                                <img style="width: 100%;" src="assets/img/infonice/key steps.png">
+                                <img style="width: 100%;" src="assets/img/infonice/key steps.png" data-action="zoom">
                             </ul>
                             <ul class="col-lg-6 col-md-6">
-                                <img style="width: 100%;" src="assets/img/infonice/overview.gif">
+                                <img style="width: 100%;" src="assets/img/infonice/overview.gif" data-action="zoom">
                             </ul>
                         </div>
-                    <!--<h3 class="overview_subtitle b2" id="Process">PROCESS</h3>
-                        <img style = "width:100%" src="assets/img/infonice/process.png">-->
+                    <h3 class="overview_subtitle b2" id="Process">PROCESS</h3>
+                        <img style = "width:100%" src="assets/img/infonice/process.png" data-action="zoom">
                     <div class="row">
                         <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                             <h3 class="overview_subtitle">MY ROLE</h3>
@@ -104,9 +105,10 @@
                             - Use mark customization approach: Just start from a traditional chart, and use click to finish everything.<br>
                             - Highly functional customizations to provide flexible.<br>
                             - Integrate into existing analysis and exploration system to smooth the iteration of data exploration, analysis and presentation.</p> 
-                         <img style="width:100%" src="assets/img/infonice/competitive analysis.png">
+                         <img style="width:100%" src="assets/img/infonice/competitive analysis.png" data-action="zoom">
                     <h3 class="overview_subtitle b5" id="Problem_Space">PROBLEM SPACE & DESIGN IMPLICATION</h3>
-                        <img id="Design_Implication b6" style="width:100%" src="assets/img/infonice/problem space.png">
+                    <h3 class="b6"></h3>
+                        <img id="Design_Implication" style="width:100%" src="assets/img/infonice/problem space.png" data-action="zoom">
 
 
 
@@ -114,14 +116,14 @@
                     <h2 class="page-header">DESIGN ITERATION</h2>
                     <hr>
                     <h3 class="overview_subtitle b7" id="Design_Concept">DESIGN CONCEPT</h3>
-                        <img style="width:100%" src="assets/img/infonice/design concept.png"><br>
+                        <img style="width:100%" src="assets/img/infonice/design concept.png" data-action="zoom"><br>
 
                     <h3 class="overview_subtitle b8" id="Interface_Design">INTERACTION DESIGN</h3>
                         <p class="project-desc">By clicking floating “Edit” button on the top-right corner, users can start designing their mark.<br>
-                        <img style="width:70%" src="assets/img/infonice/edit button.gif"><br></p>
+                        <img style="width:70%" src="assets/img/infonice/edit button.gif" data-action="zoom"><br></p>
 
                      <h3 class="overview_subtitle b9" id="Interface_Design">INTERFACE DESIGN</h3>
-                        <img style="width:100%" src="assets/img/infonice/interface design.png"><br></p>
+                        <img style="width:100%" src="assets/img/infonice/interface design.png" data-action="zoom"><br></p>
 
 
 
@@ -134,16 +136,16 @@
 
                         <h4 class="mini-title">Research Process</h4>
                             <p class="project-desc">(<a href="https://docs.google.com/document/d/1T9faOARssuXJ-_si4imtlP-lCXExrGtAp7hd91KG17I/edit" target="_blank">Click to see more details about Research Plan and Research Process</a>)</p>
-                            <img style="width:100%" src="assets/img/infonice/research process.png"><br><br>
+                            <img style="width:100%" src="assets/img/infonice/research process.png" data-action="zoom"><br><br>
 
                         <h4 class="mini-title">Quantitative Data Analysis</h4>
                              <p class="project-desc">1. Time to Complete: InfoNice Avg = 7.9 mins; DDG Avg = 15.3 mins<br>
                                 2. Quality of user created charts<br>
                                 We asked 37 external volunteers to view the infographics results created by participants(Total 16 participants) in random order and rate them from 1(very poor) to 10(very excellent). We compute the difference between the InfoNice scores and the DDG scores and show the average numbers:<br></p>
-                            <img style="width:100%" src="assets/img/infonice/chart quality.png"><br><br>
+                            <img style="width:100%" src="assets/img/infonice/chart quality.png" data-action="zoom"><br><br>
 
                         <h4 class="mini-title">Qualitative Data Analysis - Affinity Mapping</h4>
-                            <img style="width:100%" src="assets/img/infonice/research result.png">
+                            <img style="width:100%" src="assets/img/infonice/research result.png" data-action="zoom">
 
                     <h3 class="overview_subtitle b11" id="User_Survey">User Survey</h3>
                         <h4 class="mini-title">Why This Method?</h4>
@@ -165,8 +167,10 @@
         </div>
         <a id ="scrollup"></a>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/project.js"></script>
 </body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.2.0/js/transition.js"></script>
+<script src="assets/js/project.js"></script>
+<script src="assets/js/zoom.js"></script>
 </html>
 

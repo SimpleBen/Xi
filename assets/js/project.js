@@ -3,8 +3,8 @@ $(function(){
     var nav_num = parseInt($(".hidden").text());
     var toggleSelect = function(w){
         if(w<=240){$(".sub").removeClass("select");}
-        for(let i = 1;i<= nav_num;i++){
-            if($(".b"+i).offset().top - 50<w){
+        for(var i = 1;i<= nav_num;i++){
+            if(($(" .b"+i).offset().top - 50)<w){
                 $(".sub").removeClass("select");
                 $(".p"+i).addClass("select");
             }

@@ -1,4 +1,5 @@
 #aboutProfile {
+	position: relative;
     padding: 4em 2em 0 2em;
     display: inline-block;
 }

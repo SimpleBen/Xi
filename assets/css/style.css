@@ -1,6 +1,6 @@
 #aboutProfile {
 	position: relative;
-    padding: 4em 2em 0 2em;
+    padding: 5em 4em 0 4em;
     display: inline-block;
 }
 #aboutProfile img{
@@ -12,18 +12,52 @@
 	float: right;
 }
 #aboutProfile h3{
-	font-size: 18px;
+	font-size: 1.2em;
 }
 #aboutProfile h4{
-	font-size: 14px;
+	font-size: 1em;
+	font-family: 'Avenir Next', sans-serif;
 	line-height: 23px;
 }
+
+#design_philosophy {
+	position: relative;
+  
+    display: inline-block;
+}
+#design_philosophy h3{
+	font-size: 1.2em;
+}
+#design_philosophy h4{
+	font-size: 1em;
+	font-family: 'Avenir Next', sans-serif;
+	line-height: 23px;
+}
+
 #hobbies {
     display: inline-block;
-	padding: 0 2em;
+	padding: 0 4em;
 	padding-bottom: 1em;
 }
 
+#About_this_site {
+	position: relative;
+  	padding: 5em 4em 5em 4em;
+    display: inline-block;
+}
+#About_this_site h3{
+	font-size: 1.2em;
+}
+#About_this_site h4{
+	font-size: 1em;
+	font-family: 'Avenir Next', sans-serif;
+	line-height: 23px;
+}
+
+
+.centered {
+	text-align: center
+}
 
 /* Gallery */
 .gallery {
@@ -120,7 +154,7 @@ Content boxes
 ------------------------------------------------------------------- */
 
 .content-box {
-	margin: 25px 20px;
+	margin: 25px 5px;
 }
 
 .content-box img {
@@ -138,5 +172,5 @@ Content boxes
 
 .content-box-text {
 	margin: 10px 0 0;
-	font-size: 1em;
+	font-size: 0.9em;
 }

@@ -662,17 +662,14 @@
 					.on('click', 'a', function(event) {
 
 						var $a = $(this),
+							$pre = $(this).prev();
+							$next = $(this).next();
 							$gallery = $a.parents('.gallery'),
 							$mask = $('.mask'),
 							$modal = $mask.children('.modal'),
 							$inner = $modal.children('.inner'),
 							$img = $modal.find('img'),
 							href = $a.attr('href');
-
-						// Not an image? Bail.
-							// if (!href.match(/\.(jpg|gif|png|mp4)$/))
-							// 	return;
-
 
 						// Prevent default.
 							event.preventDefault();
@@ -688,11 +685,40 @@
 						// Set src.
 						$img.attr('src','assets/img/personalicon.png');
 
-						$.get(href,function(data){
-							$inner.html(()=>
+						$.ajax({
+							type: "GET",
+							url: href,
+							dataType: "html",
+							async: false,
+							beforeSend: function(){
+								$('.loading').fadeIn(500);
+							},
+							success: function(data){
+								$('.loading').fadeOut(500);
+								$inner.html(()=>
 								($(data).find('#project-main').length)?$(data).find('#project-main'):$(data).find('#short-project-main')
-							);
+								);
+							},
+							failure: function(){
+
+							}
 						});
+
+						// $.get(href,function(data){
+						// 	$inner.html(()=>
+						// 		($(data).find('#project-main').length)?$(data).find('#project-main'):$(data).find('#short-project-main')
+						// 	);
+						// });
+
+						$('.modal-pre').unbind();
+						$('.modal-next').unbind();
+						$('.modal-pre').on('click',function(){
+							$pre.trigger('click');
+						});
+						$('.modal-next').on('click',function(){
+							$next.trigger('click');
+						});
+
 						loadjscssfile("assets/css/mini-project.css", "css");
 
 						// Set visible.
@@ -725,7 +751,7 @@
 					// 		event.stopPropagation();
 
 					// })
-			$('.mask').prepend('<div class="modal" tabIndex="-1"><div class="modal-close"></div><img style="display:none" src="" /><div class="inner"></div></div>')
+			$('.mask').prepend('<div class="modal" tabIndex="-1"><div class="modal-close"></div><div class="modal-pre"><i class="fa fa-arrow-left"></i></div><div class="modal-next"><i class="fa fa-arrow-right"></i></div><div class="loading">Loading...</div><img style="display:none" src="" /><div class="inner"></div></div>')
 			.find('img')
 			.on('load', function(event) {
 

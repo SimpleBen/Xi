@@ -3448,3 +3448,34 @@ img.profile-photo:hover::before {
 	transition: all 0.6s;
 	transform: rotate(0deg);
 }
+
+.modal-pre, .modal-next {
+	position: absolute;
+	color: white;
+	padding: 1em;
+    width: 4em;
+    height: 4em;
+	background: rgba(0, 0, 0, 0.38);
+	cursor: pointer;
+}
+.modal-pre i, .modal-next i {
+	font-size: 2em;
+}
+.modal-pre {
+    left: 0px;
+}
+.modal-next {
+    right: 0px;
+}
+
+.loading {
+    position: absolute;
+    color: white;
+    width: 10em;
+    height: 5em;
+    background: rgba(0, 0, 0, 0.54);
+    z-index: 999;
+    border-radius: 0.5em;
+    text-align: center;
+    line-height: 4.8em;
+}

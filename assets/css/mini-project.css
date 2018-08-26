@@ -98,8 +98,8 @@ img.project_img{
     overflow: hidden;
 }
 img.short-top-img{
-    position: absolute;
-    width: 100%;
+    /*position: absolute;*/
+    height: 100%;
 }
 .short-project-narrow-content {
     width: 100%;
@@ -110,9 +110,10 @@ img.short-top-img{
 }
 h2.short-page-header {
     color: #fff;
-    font-size: 2em;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4em;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 20px;
 }
 .short-hr{
     color: white;
@@ -122,13 +123,13 @@ h2.short-page-header {
     margin-bottom: 20px;
 }
 p.short-project-desc {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.1em;
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 0.9em;
     font-weight: 300;
     line-height: 25px;
     color: #ffffff;
     margin-bottom: 0;
-    text-align: center;
+    text-align: left;
 }
 
 @media screen and (max-width:415px){
@@ -277,7 +278,7 @@ a.btn-warning{
 
 iframe {
     width: 100%;
-    height: 870px;
+    height: 570px;
     margin: 0 auto;
 }
 
@@ -302,10 +303,10 @@ iframe.youtube{
 
 h2.page-header{
     color: #333;
-    font-size: 2em;
+    font-size: 0.9em;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 hr {
@@ -316,7 +317,7 @@ hr {
   height: 1px;
   width: 40px;
   margin-top: 20px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 div.highlight{
@@ -387,7 +388,7 @@ h3.header{
 
 h3.overview_subtitle{
     color: #4A4A4A;
-    font-size: 18px;
+    font-size: 0.8em;
     font-weight: 800;
     padding-top: 20px;
     text-align: left;
@@ -401,8 +402,8 @@ p.project-desc {
   text-align:left;
   line-height: 30px;
   font-family: "Myriad Pro", sans-serif;*/
-  font-family: 'Lato', sans-serif;
-  font-size: 1.1em;
+  font-family: 'Avenir Next', sans-serif;
+  font-size: 0.8em;
   font-weight: 300;
   line-height: 25px;
   color: #3c3c3c;
@@ -411,4 +412,11 @@ p.project-desc {
 .top-img{
     width: 100%;
     margin: 0;
+}
+
+img{
+   /* margin: 20px 0;*/
+   display: block;
+   margin: auto;
+
 }

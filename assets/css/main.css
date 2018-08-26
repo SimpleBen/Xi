@@ -1651,7 +1651,7 @@ input[type="submit"].disabled, input[type="submit"]:disabled,  input[type="reset
 	max-width: 90vw;
 }
 .modal .inner {
-    width: 80%;
+    width: 60%;
 	height: 80%;
 	overflow-x: hidden; 
 	overflow-y: scroll;
@@ -2088,7 +2088,7 @@ input[type="submit"].disabled, input[type="submit"]:disabled,  input[type="reset
 	width: 27.5rem;
 }
 .panel .span-3 {
-	width: 30rem;
+	width: 32rem;
 }
 .panel .span-3-25 {
 	width: 32.5rem;

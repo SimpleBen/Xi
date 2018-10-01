@@ -85,12 +85,21 @@ ul.row {
 .project-aside {
     position: absolute;
     margin-left: -15%;
-    top: 240px;
+    opacity: 0;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
 }
 .project-aside-float {
     position: fixed;
     margin-left: -15%;
-    top: 20px;
+    top: 20px !important;
+    opacity: 1;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
 }
 .project-main-menu li {
     list-style: none;
@@ -489,4 +498,27 @@ span.key-word {
 .top-img{
     width: 100%;
     margin: 0;
+}
+.video {
+    position: absolute;
+    left: 0;
+    top: 240px;
+}
+
+.overview-table {
+    margin: 0 auto;
+    width: 55%;
+}
+.overview-table tbody tr {
+    background: none !important;
+    border: 0;
+}
+.overview-table tbody tr td {
+    padding: 0.55rem 0.75rem;
+}
+td.table-left {
+    font-weight: 700;
+}
+.zoom-overlay{
+    background: #000 !important;
 }

@@ -32,7 +32,6 @@ img{
     background: #FFF;
     padding: 0px;
     margin-top: 240px;
-    margin-bottom: 50px;
     color: #000110;
 }
 .project-narrow-content{
@@ -470,4 +469,18 @@ p.project-desc {
 .top-img{
     width: 100%;
     margin: 0;
+}
+.zoom-img {
+    position: relative;
+    margin-top: 2em;
+}
+.scrolltip {
+    padding: 5px 15px;
+    border-radius: 6px;
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    z-index: 999;
+    left: 10px;
+    top: 10px;
 }

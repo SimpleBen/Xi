@@ -373,7 +373,7 @@
 					(function() {
 
 						var	$left = $('<div class="scrollZone left"></div>'),
-							$right = $('<div class="scrollZone right"></div>'),
+							$right = $('<div class="scrollZone right"><div class="tip"></div></div>'),
 							$zones = $left.add($right),
 							paused = false,
 							intervalId = null,

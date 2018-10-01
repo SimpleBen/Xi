@@ -3487,3 +3487,62 @@ img.profile-photo:hover::before {
     text-align: center;
     line-height: 4.8em;
 }
+
+.tip {
+    position: fixed;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 999;
+}
+.tip::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 3em;
+    height: 3em;
+    background: rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+	animation: tip 1.6s cubic-bezier(0.25, 0.1, 0.62, 0.69) infinite;
+}
+
+@keyframes tip {
+	0% { transform: scale(0); opacity: 1; }
+	75% { transform: scale(1.2); opacity: 0.5; }
+	100% { transform: scale(1.3); opacity: 0; }
+	
+}
+
+.tip::after {
+    content: 'Put your mouse here';
+    color: #ffffff;
+    text-shadow: 0px 0px 5px #FFF;
+    font-size: 12px;
+    position: absolute;
+    padding: 8px 15px;
+    width: 143px;
+    left: -120px;
+    top: -2px;
+    background: rgba(255, 255, 255, 0.3);
+	border-radius: 18px;
+	opacity: 0;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+}
+
+.tip:hover::after {
+	left: -160px;
+	opacity: 1;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+}

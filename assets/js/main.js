@@ -657,7 +657,6 @@
 					});
 			
 
-			// Gallery.
 				$('.gallery')
 					.on('click', 'a', function(event) {
 
@@ -671,18 +670,13 @@
 							$img = $modal.find('img'),
 							href = $a.attr('href');
 
-						// Prevent default.
 							event.preventDefault();
 							event.stopPropagation();
-
-						// Locked? Bail.
 							if ($modal[0]._locked)
 								return;
 
-						// Lock.
 							$modal[0]._locked = true;
 
-						// Set src.
 						$img.attr('src','assets/img/personalicon.png');
 
 						$.ajax({
@@ -704,12 +698,6 @@
 							}
 						});
 
-						// $.get(href,function(data){
-						// 	$inner.html(()=>
-						// 		($(data).find('#project-main').length)?$(data).find('#project-main'):$(data).find('#short-project-main')
-						// 	);
-						// });
-
 						$('.modal-pre').unbind();
 						$('.modal-next').unbind();
 						$('.modal-pre').on('click',function(){
@@ -721,19 +709,16 @@
 
 						loadjscssfile("assets/css/mini-project.css", "css");
 
-						// Set visible.
-							$modal.addClass('visible');
+						$modal.addClass('visible');
 
-						// Focus.
-							$modal.focus();
+						$modal.focus();
 
-						// Delay.
-							setTimeout(function() {
+						setTimeout(function() {
 
-								// Unlock.
-									$modal[0]._locked = false;
+							// Unlock.
+								$modal[0]._locked = false;
 
-							}, 600);
+						}, 600);
 
 					});
 					// .on('keypress', '.modal', function(event) {
@@ -773,48 +758,35 @@
 					var $modal = $('.modal');
 					var $img = $modal.find('img');
 		
-		
-					// Locked? Bail.
-						if ($modal[0]._locked)
-							return;
-		
-					// Already hidden? Bail.
-						if (!$modal.hasClass('visible'))
-							return;
-		
-					// Stop propagation.
-						event.stopPropagation();
-		
-					// Lock.
-						$modal[0]._locked = true;
-		
-					// Clear visible, loaded.
-						$modal.removeClass('loaded');
-					
-					// Delay.
+					if ($modal[0]._locked)
+						return;
+	
+					if (!$modal.hasClass('visible'))
+						return;
+	
+					event.stopPropagation();
+	
+					$modal[0]._locked = true;
+	
+					$modal.removeClass('loaded');
+				
+					setTimeout(function() {
+	
+						$modal
+							.removeClass('visible')
+	
+							$wrapper.triggerHandler('---pauseScrollZone');
+	
 						setTimeout(function() {
-		
-							$modal
-								.removeClass('visible')
-		
-							// Pause scroll zone.
-								$wrapper.triggerHandler('---pauseScrollZone');
-		
-							setTimeout(function() {
-		
-								// Clear src.
-								$img.attr('src','');
-								// Unlock.
-									$modal[0]._locked = false;
-		
-								// Focus.
-									$body.focus();
-		
-							}, 475);
-		
-						}, 125);
+	
+							$img.attr('src','');
+								$modal[0]._locked = false;
+								$body.focus
+						}, 475);
+	
+					}, 125);
 
-						$('.modal .inner #project-main').fadeOut(500,()=>{$('.modal .inner').html('');removejscssfile("assets/css/mini-project.css", "css");});
+					$('.modal .inner #project-main').fadeOut(500,()=>{$('.modal .inner').html('');removejscssfile("assets/css/mini-project.css", "css");});
 		
 				});
 
@@ -826,67 +798,20 @@
 		$('.nav a').on('click',function(e){
 			$(this).addClass('nav-active').siblings().removeClass('nav-active');
 		});
-			var mini_state = 0; 
-			$(window).on('scroll',function(e){
-			// if($('.intro-more').hasClass('intro-more-d')){
-				if ($(window).width()>415) {
-					var first_l = $('#zero').offset().left + $('#zero').width();
-					var	minip_l = $('#mini-projects').offset().left;
-					var doc_s = $(document).scrollLeft();
-					var distance =  minip_l - doc_s;
-					if(distance < 180 && !mini_state){
-						mini_state = 1;
-						$('.nav a:eq(1)').addClass('nav-active').siblings().removeClass('nav-active');
-					}else if(distance > 180){
-						$('.nav a:eq(0)').addClass('nav-active').siblings().removeClass('nav-active');
-						mini_state = 0;
-					}
-					if(doc_s < first_l && !$('.nav a:eq(0)').hasClass('nav-active') ){
-						$('.nav a:eq(0)').addClass('nav-active').siblings().removeClass('nav-active');
-						mini_state = 0;
-					}
-					if($(document).scrollLeft() + 80 >= $(document).width() - $(window).width()){
-						$('.nav a:eq(2)').addClass('nav-active').siblings().removeClass('nav-active');
-						mini_state = 0;
-					}
-				}else{
-					$(window).on('scroll',function(e){
-						var first_t = $('#zero').offset().top + $('#zero').height();
-						var	minip_t = $('#mini-projects').offset().top;
-						var doc_s = $(document).scrollTop();
-						var distance =  minip_t - doc_s;
-						if(distance < 80 && !mini_state){
-							mini_state = 1;
-							$('.nav a:eq(1)').addClass('nav-active').siblings().removeClass('nav-active');
-						}else if(distance > 80){
-							$('.nav a:eq(0)').addClass('nav-active').siblings().removeClass('nav-active');
-							mini_state = 0;
-						}
-						if(doc_s < first_t && !$('.nav a:eq(0)').hasClass('nav-active') ){
-							$('.nav a:eq(0)').addClass('nav-active').siblings().removeClass('nav-active');
-							mini_state = 0;
-						}
-						if($(document).scrollTop() >= $(document).height() - $(window).height() - 500){
-							$('.nav a:eq(2)').addClass('nav-active').siblings().removeClass('nav-active');
-							mini_state = 0;
-						}
-					});
-				}
-			// }
-				
-			});
 
-			$('.more-about').on('click',function(){
-				$('.intro-more').removeClass('intro-more-d');
-				$('.more-about').addClass('intro-more-d');
-				$('.hide-more').addClass('hide-more-show');
-			});
+		$('.more-about').on('click',function(){
+			$('.intro-more').removeClass('intro-more-d');
+			$('.more-about').addClass('intro-more-d');
+			$('.hide-more').addClass('hide-more-show');
+		});
 
-			$('.hide-more').on('click',function(){
-				$('.intro-more').addClass('intro-more-d');
-				$('.more-about').removeClass('intro-more-d');
-				$('.hide-more').removeClass('hide-more-show');
+		$('.hide-more').on('click',function(){
+			$('.intro-more').addClass('intro-more-d');
+			$('.more-about').removeClass('intro-more-d');
+			$('.hide-more').removeClass('hide-more-show');
 
-				// setTimeout(()=>$(document).scrollLeft($('#wrapper').width()),501);
-			});
+			// setTimeout(()=>$(document).scrollLeft($('#wrapper').width()),501);
+		});
+
+		$('.main-page').width($(window).width() * 0.8);
 })(jQuery);

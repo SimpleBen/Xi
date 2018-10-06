@@ -6,45 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			@media screen and (min-width: 786px) and (max-height: 800px) {
-				#page-wrapper{
-					padding: 0;
-					padding-left: 45px;
-					padding-right: 45px;
-				}
-				#wrapper{
-					margin-top: 0;
-					height: 28em !important;
-				}
-				.top-nav {
-					width: 100%;
-					height: 15%;
-					position: fixed;
-					top: 1em;
-					left: 0;
-					z-index: 99;
-				}
-				.logo {
-					margin: 0;
-					margin-top: 25px;
-					margin-left: 45px;
-					float: left;
-				}
-				.nav {
-					width: 473px;
-					height: 30px;
-					margin: 0 auto;
-					padding: 0;
-					margin-top: 20px;
-					float: right;
-					margin-right: 30px;
-				}
-			}
-		</style>
 	</head>
 	<body>
-
 		<!-- star -->
 		<div class="star-up"><div class="stars"></div></div>
 		<div class="mask"></div>
@@ -54,8 +17,7 @@
 					<a href="#zero"><div class="logo"></div></a>
 					<div class="nav">
 						<a href="#zero" class="nav-active">PORTFOLIO</a>
-						<a href="#mini-projects">MINI PROJECTS</a>
-						<a href="#about">ABOUT</a>
+						<a href="about.html">ABOUT</a>
 						<a href="assets/Resume_Xi Chen.pdf" target="_blank">RESUME</a>
 					</div>
 				</div>
@@ -78,195 +40,66 @@
 				</section>
 
 				<!-- Tencent -->
-				<section class="panel spotlight medium right" id="first">
-					<div class="content span-7">
+				<section class="panel spotlight piece right" id="first" onclick="location.href='tencent.html'">
+					<div class="content">
+						<div class="major-img" style="background-image:url(assets/img/main/tencent.png);background-position: -1px 36px;"></div>
 						<h2 class="major">Tencent Internship</h2>
 						<h4 class="major-cate">Contextual Design | AI +</h4>
 						<p>​Personalize UI and recommend more accurate functionlaities to users.</p>
-						<a href="GatePal.html" class="button readMore">Read More</a>
-					</div>
-					<div class="image" data-position="right">
-						<img src="images/gatepal.png" alt="" />
 					</div>
 				</section>
 
 				<!-- GatePal -->
-				<section class="panel spotlight medium right" id="first">
-					<div class="content span-7">
+				<section class="panel spotlight piece right" id="second" onclick="location.href='gatepal.html'">
+					<div class="content">
+						<div class="major-img" style="background-image:url(assets/img/main/gatepal.png);background-position: 70px -10px;"></div>
 						<h2 class="major">GatePal</h2>
 						<h4 class="major-cate">Universal Design | UX Research | iOS Development</h4>
-						<p>​Lacking information about airport environments and route conditions makes it difficult for air travelers to plan indoor activities. Our application aims to enhance navigational experience for people with different physical abilities.</p>
-						<a href="GatePal.html" class="button readMore">Read More</a>
-					</div>
-					<div class="image" data-position="right">
-						<img src="images/gatepal.png" alt="" />
+						<p>​Enhance navigational experience for people with different physical abilities.</p>
 					</div>
 				</section>
 
-				<!-- InfoNice -->
-				<section class="panel spotlight large left" id="second">
-					<div class="content span-5-5">
-						<h2 class="major">InfoNice - Microsoft Internship</h2>
+				<!-- Microsoft -->
+				<section class="panel spotlight piece left" id="third" onclick="location.href='infonice.html'">
+					<div class="content">
+						<div class="major-img" style="background-image:url(assets/img/main/microsoft.png);background-position: 0px 80px;"></div>
+						<h2 class="major">Microsoft Internship</h2>
 						<h4 class="major-cate">Information Visualization | UX Research | Web Development</h4>
-						<p>​Not only for graphic designers, but also for data reports or business dashboards, our Power BI Visual App aims to enables users to create data-driven infographics easily. It's launched!</p>
-						<a href="InfoNice.html" class="button readMore">Read More</a>
-					</div>
-					<div class="image" data-position="left">
-						<img src="images/infonice.png" alt="" />
+						<p>​Enable users to create data-driven infographics easily. It’s launched!</p>
 					</div>
 				</section>
 
-				<!-- Finger Proximity -->
-				<!-- <section class="panel spotlight large right">
-					<div class="content span-5">
-						<h2 class="major">Finger Proximity</h2>
-						<h4 class="major-cate">Interaction Design | Hardware Prototying | ML Algorithm</h4>
-						<p>Recognize fine-grained hand gestures to achieve advanced T9 text input by proximity sensing input devices.</p>
-						<a href="Finger.html" class="button readMore">Read More</a>
-					</div>
-					<div class="image" data-position="top right">
-						<img src="images/fingerProximity.png" alt="" />
-					</div>
-				</section> -->
-
-				<!-- Panel -->
-				<section class="panel" id="mini-projects">
-					<!--<div class="intro color2">
-						<h2 class="major">Mini Projects</h2>
-						<p>A collection of things I’ve created over the past few years</p>
-					</div>-->
-					<div class="gallery">
-						<div class="group span-7-5">
-							<a href="Finger.html" class="image filtered span-2-5" data-position="bottom" data-title="Finger">
-								<img src="images/gestureDetection.jpg" alt="" />
-								<span class="mini-title">Gesture Detection</span>
-								<span class="mini-brief">Sensor Technology</span>
-							</a>
-							<a href="align.html" class="image filtered span-2-5" data-position="buttom" data-title="Align">
-								<img src="images/align.png" alt="" />
-								<span class="mini-title">Align</span>
-								<span class="mini-brief">Crowdsourcing for route planning</span>
-							</a>
-							<a href="PekingU.html" class="image filtered span-2-5" data-position="right" data-title="PekingU">
-								<img src="images/PekingU.png" alt="" />
-								<span class="mini-title">Peking University in Pot Plants</span>
-								<span class="mini-brief">Bio Photography</span>
-							</a>
-							<a href="AirPollution.html" class="image filtered span-2-5" data-position="buttom" data-title="Air Pollution">
-								<img src="images/AirPollution.png" alt="" />
-								<span class="mini-title">Visual Analytics for Air Pollution Data</span>
-								<span class="mini-brief">Data Visualzation</span>
-							</a>
-							<a href="RandomArt.html" class="image filtered span-2-5" data-position="right" data-title="Random Art">
-								<img src="images/RandomArt.png" alt="" />
-								<span class="mini-title">Art Generation</span>
-								<span class="mini-brief">Use Visualization to Express Yourself</span>
-							</a>
-							<a href="Craft.html" class="image filtered span-2-5" data-position="right" data-title="Craft">
-								<img src="images/Craft.png" alt="" />
-								<span class="mini-title">Craft</span>
-								<span class="mini-brief">Pottery Art</span>
-							</a>
-						</div>
+				<!-- InfNote -->
+				<section class="panel spotlight piece left" id="forth" onclick="location.href=''">
+					<div class="content">
+						<div class="major-img" style="background-image:url(assets/img/main/infNote.png);background-position: 40px 0px;"></div>
+						<h2 class="major">InfNote</h2>
+						<h4 class="major-cate">iOS & Web Design | Blockchain</h4>
+						<p>Blockchain based forum which provides peer-to-peer and high reliability posts. It’s ready to launch!</p>
 					</div>
 				</section>
 
-				<!-- Panel -->
-				<section class="panel color4-alt" id="about">
-					<div class="inner columns pro-photo">
-						<!--<div class="span-2-5  intro-back">
-							<img class="profile-photo" src="assets/img/profile.jpeg">
-						</div>-->
-						<a href="about.html" class="image filtered span-2-5 intro-back" style="overflow: hidden;">
-							<img class="profile-photo" src="assets/img/profile.jpeg" alt="" />
-							<span class="profile-title">More About Me</span>
-						</a>
-					</div>
-					<div class="inner columns">
-						<div class="span-3">
-							<!-- <div class="hide-more"></div> -->
-							<h2 class="major">About Me</h2>
-							<h4>Hi, I’m Xi.</h4>
-							<p>- A UX DESIGNER who explores seamless, engaging communication<br>
-							- A TECHNOLOGY ENTHUSISAT who specializes in ML, DataVis<br>
-							- An AMATEUR PHOTOGRAPHER who loves travelling</p>
-							<a href="about.html" class="button">More About Me</a>							
-								<!--Borned in Beijing, I graduated from Peking University with a Bachelor of Computer Science. I specialized in Data Mining & Information Visualization and focused on developing interfaces for human to better explore and interact with data. Instead of just focusing on pure programming, I’m also interested in users, in creating seamless, engaging experience for users. That’s why I choose UX.  </p>
-							<a href="#about" class="button more-about">More About Me</a>
-						</div>	
-						<div class="span-2-5">
-							
-								<p>Like the icon I designed(Infinity within Finity), I’m always finding and pursuing “The Possibility within the Certainty”. Being a pioneer instead of a follower is what I believe and what I want to be.</p>
-	
-								<p>Currently I’m a Master student in Human-ComputDer Interaction in Georgia Tech and gained Graduate Research Assistant position. I also start my freelance as a designer and front-end developer. Prior to this, I interned as a Interaction Designer at Tencent & UX Intern at Microsoft Research Asia. I participated in the loop of user research, design, front-end implement and back-end algorithm.</p>-->
-						</div>
-					</div>
-					
-					<!--<div class="inner columns intro-more intro-more-d">
-						
-						<div class="span-2-5">
-							<h4>My Design Philosophy</h4>
-							<ul type="Square">
-									<li>Design communicates obvious function: Use logical thinking to prioritize information, communicate clear, obvious, intuitive functions and provide seamless guide for users of how to interact with it.</li>
-									<li>Design should incentive engagement and motivation: Use empathy to understand the end users and their needs and create moments of delight for people who encounter it.</li>
-									<li>Understanding the core principles, abilities, and constraints of advanced technology(e.g. Machine learning, Image recognition) helps me improve the rationality of design process. Accumulation in web and iOS development facilitates the communication between designer and developer.</li>
-							</ul>
-						</div>
-
-
-					</div>
-
-					<div class="inner columns intro-more intro-more-d">
-							<div class="span-7">
-									<h4 class="hobby-qz">Things I love...</h4>
-									<div class="hobby">
-										<div class="hobby-item">
-											<img src="assets/img/hobby/design.png" class="hobby-img">
-											<span class="hobby-cap">Design</span>
-											<span class="hobby-p">UX and UI - Adobe Photoshop, Illustrator, InDesign, Sketch.</span>
-										</div>
-										<div class="hobby-item">
-											<img src="assets/img/hobby/photography.png" class="hobby-img">
-											<span class="hobby-cap">Photography</span>
-											<span class="hobby-p">Instead of under cultural bias, I prefer to embrace the multiplicity of life. I believe, where there is the possibility, there is creativity.</span>
-										</div>
-										<div class="hobby-item">
-											<img src="assets/img/hobby/music.png" class="hobby-img">
-											<span class="hobby-cap">Music</span>
-											<span class="hobby-p">Use rhythm in piano, posture in ballet as a way to understand and express emotions. National certificated at the age of 12!</span>
-										</div>
-										<div class="hobby-item">
-											<img src="assets/img/hobby/development.png" class="hobby-img">
-											<span class="hobby-cap">Front-end Development</span>
-											<span class="hobby-p">Experienced coding for iOS App in Swift, Objective C; and coding for web in JavaScript/ TypeScript, D3, PHP, HTML, CSS.</span>
-										</div>
-										<div class="hobby-item">
-											<img src="assets/img/hobby/travel.png" class="hobby-img">
-											<span class="hobby-cap">Travel</span>
-											<span class="hobby-p">Traveling around the world has made me more open minded and broadened my perspective on the design industry.</span>
-										</div>
-										<div class="hobby-item">
-											<img src="assets/img/hobby/sports.png" class="hobby-img">
-											<span class="hobby-cap">Sports</span>
-											<span class="hobby-p">I love all kinds of sports. I cycled 2000 km in summer with my 14 dear teammates. I’m the champion of Sit-up at Peking University Athletic Meeting. I also love rock climbing, diving, hiking... </span>
-										</div>
-									</div>
-							</div>
-						</div>	
--->
-					<div class="inner columns divided">
-						<div class="span-1p-5">
-							<ul class="contact-icons color1">
-								<li onclick="location.href='mailto:xi.irischen@gmail.com'" class="icon fa-envelope"></li>
-								<li onclick="window.open('https://www.linkedin.com/in/xi-chen-9a2046a2/')" class="icon fa-linkedin"></li>
-								<li onclick="window.open('https://dribbble.com/xi_shellychen')" class="icon fa-dribbble"></li>
-								<li onclick="window.open('https://www.facebook.com/chen.xi.965580')" class="icon fa-facebook"></li>
-								<li onclick="window.open('https://www.instagram.com/shelly_xchen/')" class="icon fa-instagram"></li>
-							</ul>
-						</div>
+				<!-- Align -->
+				<section class="panel spotlight piece left" id="fifth" onclick="location.href='align.html'">
+					<div class="content">
+						<div class="major-img" style="background-image:url(assets/img/main/align.png);background-position: 2px 0px;"></div>
+						<h2 class="major">Align</h2>
+						<h4 class="major-cate">iOS Design & Development | Crowdsourcing | Non-Visual UI</h4>
+						<p>Crowdsroucing app for route planning and environmental parameters sharing.</p>
 					</div>
 				</section>
 
+				<!-- Gesture Detection -->
+				<section class="panel spotlight piece left" id="sixth" onclick="location.href='finger.html'">
+					<div class="content">
+						<div class="major-img" style="background-image:url(assets/img/main/gesture.png);background-position: 0px -65px;background-size: 100%;"></div>
+						<h2 class="major">Gesture Detection</h2>
+						<h4 class="major-cate">Machine Learning | UX Research | Sensor Technology</h4>
+						<p>A thumb-mounted sensing solution to enable eyes-free interactions using one handed input technologies.</p>
+					</div>
+				</section>
+			</div>
+		</div>
 
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/skel.min.js"></script>
@@ -276,7 +109,7 @@
 		<script src='assets/js/stopExecutionOnTimeout.js'></script>
 		<script>
 				$(document).ready(function () {
-					var stars = 800;
+					var stars = 600;
 					var $stars = $('.stars');
 					var r = 800;
 					for (var i = 0; i < stars; i++) {

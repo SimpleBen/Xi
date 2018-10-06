@@ -2,6 +2,7 @@ body{
     width: auto;
     height: auto;
     font-size: 13px;
+    background: #FFF;
 }
 body::before{
     display: none;
@@ -24,18 +25,54 @@ img{
     display: none;
 }
 #project-page {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
-    padding: 0px 30px;
 }
 #project-main {
     background: #FFF;
     padding: 0px;
-    margin-top: 240px;
     color: #000110;
 }
 .project-narrow-content{
-    padding: 30px 40px;
+    padding: 30px 20%;
+}
+.float-nav-active {
+    opacity: 1 !important;
+    top: 0px !important;
+}
+.float-nav {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: -80px;
+    opacity: 0;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.float-nav .logo {
+    width: 4em;
+    height: 2em;
+    background: url(../../images/logo_grey.png) no-repeat;
+    background-size: contain;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+.float-nav .nav {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.float-nav .nav a {
+    color: #a7a7a7;
+    text-decoration: none;
+    border: 0px;
+    font-size: 16px;
+    padding: 0 10px;
+}
+.float-nav .nav a:hover {
+    color: #777777;
 }
 
 ul.row {
@@ -83,14 +120,28 @@ ul.row {
 }
 
 .project-aside {
-    position: absolute;
-    margin-left: -15%;
-    top: 240px;
+    position: fixed;
+    margin-left: -300px;
+    height: 100%;
+    z-index: 9;
+    display: table;
+    opacity: 0;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
 }
 .project-aside-float {
-    position: fixed;
-    margin-left: -15%;
-    top: 20px;
+    margin-left: 20px;
+    transition: all 0.3s;
+    opacity: 1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.project-aside-container {
+    display: table-cell;
+    vertical-align: middle;
 }
 .project-main-menu li {
     list-style: none;
@@ -98,6 +149,7 @@ ul.row {
     margin: 10px 0;
 }
 .project-main-menu li a{
+    color: #a7a7a7;
     border-bottom: none;
     text-decoration: none;
 }
@@ -111,7 +163,7 @@ ul.row {
 }
 li.font_padding a {
     font-size: 120%;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
 }
 .sub{
@@ -131,7 +183,7 @@ li.font_padding a {
 .sub:before{
     content: '';
     position: absolute;
-    margin-top: 0.2em;
+    margin-top: 0.1em;
     width: 2px;
     height: 1.4em;
     background: #FFF;
@@ -147,7 +199,7 @@ li.font_padding a {
     position: absolute;
     width: 2px;
     height: 1.4em;
-    background: #FFF;
+    background: #a7a7a7;
     opacity: 1;
     left: 10px;
     transition: all 0.3s;
@@ -156,7 +208,6 @@ li.font_padding a {
     -o-transition: all 0.3s;
 }
 .select {
-    color: rgb(143, 160, 255)!important;
     padding-left: 20px;
     transition: all 0.3s;
     -webkit-transition: all 0.3s;
@@ -178,7 +229,7 @@ li.font_padding a {
     position: absolute;
     width: 2px;
     height: 18px;
-    background: #FFF;
+    background: #b4bfff;
     opacity: 1;
     left: 10px;
     transition: all 0.3s;
@@ -468,7 +519,12 @@ p.project-desc {
 
 .top-img{
     width: 100%;
+    height: 700px;
     margin: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: 60px;
 }
 .zoom-img {
     position: relative;

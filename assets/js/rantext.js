@@ -1,0 +1,3 @@
+$(function(){
+    var text = [ "Facilitator", "Problem Solving", "Critical Thinking", "Adobe Photoshop", "Xmind", "A/B Testing", "Sketch", "Information Architecture", "Principle", "Design", "Affinity Diagram", "Personas", "data mining", "Swift", "Balsamiq", "Contextual Design", "Usability Testing", "Contextual Inquiry", "Machine Learning", "JavaScript", "Journey Map", "Information Visualization", "Technology", "NLP", "D3" ];
+});

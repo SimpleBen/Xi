@@ -9,6 +9,10 @@
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="assets/css/project.css">
 <link rel="stylesheet" href="assets/css/zoom.css">
+<style>
+        .top-img, .bottom-nav, .select:before { background-color:#6d8ad7; }
+        .select { color: #6d8ad7 !important; }
+</style>
 </head>
 
 <body>
@@ -17,72 +21,72 @@
         <a href="index.html"><div class="logo"></div></a>
         <div class="nav">
             <a href="index.html" class="nav-active">PORTFOLIO</a>
-            <a href="index.html#mini-projects">MINI PROJECTS</a>
-            <a href="index.html#about">ABOUT</a>
+            <a href="about.html">ABOUT</a>
             <a href="assets/Resume_Xi Chen.pdf" target="_blank">RESUME</a>
         </div>
     </div>
+    <div class="float-nav"></div>
 
     <span class="project-nav-toggle"><i></i></span>
     <aside class="project-aside">
-        <button onclick="location.href='index.html#first'" type="button" class="back-btn">Back</button>
-        <nav class="project-main-menu">
-            <ul class="menu-ul">
-                <li class="font_padding"><a href="#Overview">Overview</a></li>
-                <li><a href="#Objective" class="sub p1">Objective</a></li>
-                <li><a href="#Process" class="sub p2">Process</a></li>
-                <li class="font_padding"><a href="#Research">Research</a></li>
-                <li><a href="#Research_Goal" class="sub p3">Research Goal</a></li>
-                <li><a href="#Contextual_Inquiry" class="sub p4">Contextul Inquiry</a></li>
-                <li><a href="#Affinity_Mapping" class="sub p5">Affinity Mapping</a></li>
-                <li class="font_padding"><a href="#Design">Design Iteration</a></li>
-                <li><a href="#Ideation" class="sub p6">Ideation</a></li>
-                <li><a href="#Journey_Map" class="sub p7">Journey Map</a></li>
-                <li><a href="#Iteration" class="sub p8">Iteration</a></li>
-                <li class="font_padding"><a href="#Usability_Testing">Usability Testing</a></li>
-                <li><a href="#Refinement" class="sub p9">Refinement</a></li>
-                <li class="font_padding"><a href="#Final_Design">Final Design</a></li>
-                <li><a href="#User_Flow" class="sub p10">User Flow</a></li>
-                <li><a href="#Prototype" class="sub p11">Prototype</a></li>
-            </ul>
-            <div class="hidden">11</div>
-        </nav>
+        <div class="project-aside-container">
+            <!-- <button onclick="location.href='index.html#first'" type="button" class="back-btn">Back</button> -->
+            <nav class="project-main-menu">
+                <ul class="menu-ul">
+                    <li class="font_padding"><a href="#Overview">Overview</a></li>
+                    <li><a href="#Objective" class="sub p1">Objective</a></li>
+                    <li><a href="#Process" class="sub p2">Process</a></li>
+                    <li class="font_padding"><a href="#Research">Research</a></li>
+                    <li><a href="#Research_Goal" class="sub p3">Research Goal</a></li>
+                    <li><a href="#Contextual_Inquiry" class="sub p4">Contextul Inquiry</a></li>
+                    <li><a href="#Affinity_Mapping" class="sub p5">Affinity Mapping</a></li>
+                    <li class="font_padding"><a href="#Design">Design Iteration</a></li>
+                    <li><a href="#Ideation" class="sub p6">Ideation</a></li>
+                    <li><a href="#Journey_Map" class="sub p7">Journey Map</a></li>
+                    <li><a href="#Iteration" class="sub p8">Iteration</a></li>
+                    <li class="font_padding"><a href="#Usability_Testing">Usability Testing</a></li>
+                    <li><a href="#Refinement" class="sub p9">Refinement</a></li>
+                    <li class="font_padding"><a href="#Final_Design">Final Design</a></li>
+                    <li><a href="#User_Flow" class="sub p10">User Flow</a></li>
+                    <li><a href="#Prototype" class="sub p11">Prototype</a></li>
+                </ul>
+            </nav>
+        </div>
     </aside>
 
     <div id="project-main">
-        <img class="top-img" src="assets/img/gatepal/overview.png" data-action="zoom">
+        <div class="top-img" style="background-image:url(assets/img/gatepal/overview.png);"></div>
         <div class="project-narrow-content" >
             <div id="Overview">
-                    <h2 class="page-header">OVERVIEW</h2> 
-                    <hr>
-                    <h3 class="overview_subtitle b1" id="Objective">OBJECTIVE</h3>
-                        <p class="project-desc">​Lacking of information provided about airport environments and route conditions makes it difficult for air travelers to plan <b>indoor activities</b>. Our target is to:<br>
-                        - Provide provision of relevant information for travelers to facilitate their navigational decision making.<br>
-                        - Use <b>universal design approach</b> to ensure it is useful and usable by travelers with different physical abilities.<br></p>
-                    <h3 class="overview_subtitle b2" id="Process">PROCESS</h3>
-                        <img style = "width:100%" src="assets/img/gatepal/process.png" data-action="zoom">
-                    <div class="row">
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <h3 class="overview_subtitle">MY ROLE</h3>
-                                <h4 class="mini-title">Develop</h4>
-                                    <p class="project-desc">​Led the implementation of high-fidelity interactive prorotype using Swift and iBeacon.</p>
-                                <h4 class="mini-title">Research</h4>
-                                    <p class="project-desc">​Conducted contextual inquiry for 8 users(2 wheelchair users, 3 blind users, 3 older adults). Transcribed the recording and finished the affinity mapping.</p>
-                                <h4 class="mini-title">Design</h4>
-                                    <p class="project-desc">​Led design phases of ideation, journey map, design iteration. Created user flow, final design and crafted the interactive prototype with InVision.</p>
-                                <h4 class="mini-title">Usability Testing</h4>
-                                    <p class="project-desc">​Designed, moderated the usability testing and refined design.</p>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <h3 class="overview_subtitle">DURATION</h3>
-                                <p class="project-desc">Sep.2017 - May.2018 <br>@ Georgia Tech</p>
-                            <h3 class="overview_subtitle">PROJECT TEAM</h3>
-                                <p class="project-desc"><a href="http://www.yilinelaineliu.com/" target="_blank">Yilin Elaine Liu</a> | Xi Chen | <a href="https://acarroll.squarespace.com/" target="_blank">Alex Carroll</a></p>
-                            <h3 class="overview_subtitle">METHODS AND TOOLS</h3>
-                                <p class="project-desc">Field Study, Usability Testing, Wireframing, Sketch, Principle, InVision, iBeacon, Swift</p>
-                        </div>
+                <h2 class="page-header">OVERVIEW</h2> 
+                <hr>
+                <h3 class="overview_subtitle b1" id="Objective">OBJECTIVE</h3>
+                <p class="project-desc">​Lacking of information provided about airport environments and route conditions makes it difficult for air travelers to plan <b>indoor activities</b>. Our target is to:<br>
+                - Provide provision of relevant information for travelers to facilitate their navigational decision making.<br>
+                - Use <b>universal design approach</b> to ensure it is useful and usable by travelers with different physical abilities.<br></p>
+                <h3 class="overview_subtitle b2" id="Process">PROCESS</h3>
+                <img style = "width:100%" src="assets/img/gatepal/process.png" data-action="zoom">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <h3 class="overview_subtitle">MY ROLE</h3>
+                        <h4 class="mini-title">Develop</h4>
+                            <p class="project-desc">​Led the implementation of high-fidelity interactive prorotype using Swift and iBeacon.</p>
+                        <h4 class="mini-title">Research</h4>
+                            <p class="project-desc">​Conducted contextual inquiry for 8 users(2 wheelchair users, 3 blind users, 3 older adults). Transcribed the recording and finished the affinity mapping.</p>
+                        <h4 class="mini-title">Design</h4>
+                            <p class="project-desc">​Led design phases of ideation, journey map, design iteration. Created user flow, final design and crafted the interactive prototype with InVision.</p>
+                        <h4 class="mini-title">Usability Testing</h4>
+                            <p class="project-desc">​Designed, moderated the usability testing and refined design.</p>
                     </div>
-
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <h3 class="overview_subtitle">DURATION</h3>
+                            <p class="project-desc">Sep.2017 - May.2018 <br>@ Georgia Tech</p>
+                        <h3 class="overview_subtitle">PROJECT TEAM</h3>
+                            <p class="project-desc"><a href="http://www.yilinelaineliu.com/" target="_blank">Yilin Elaine Liu</a> | Xi Chen | <a href="https://acarroll.squarespace.com/" target="_blank">Alex Carroll</a></p>
+                        <h3 class="overview_subtitle">METHODS AND TOOLS</h3>
+                            <p class="project-desc">Field Study, Usability Testing, Wireframing, Sketch, Principle, InVision, iBeacon, Swift</p>
+                    </div>
+                </div>
             </div>
                 
             <div id="Research">
@@ -196,41 +200,40 @@
                 <p class="project-desc">To collect rapid user feedbacks in general, I crafted InVision and we conducted task-based usability testing with 5 potential end users. </p>
                 <h3 class="overview_subtitle b9" id="Refinement">Refinement</h3>
                 <ul class="row">
-                        <ul class="col-lg-4 col-md-4">
-                            <div class="imgcontainer">
-                                <img src="assets/img/gatepal/usability testing/Check In Counter_route1.png" data-action="zoom">
-                            </div>
-                        </ul>
-                        <ul class="col-lg-8 col-md-8">
-                            <p style="text-align: left; padding-bottom: 20px;">Issue 1: Time details’ icon so close to “Go” button that users ignore the small “i”icon. <br>
-                            Solution: Move the info button next to “30 mins”. Also, the info is about the time, so it will make two functions better integrated.<br><br>
-                            Issue 2: The wording should be as clear as possible. Try to avoid any confusion<br>
-                            - The wording of “walk” makes users confuse especially when connects with “wheelchair” below. (Users wondered why wheelchair still needs walk)<br>
-                            - Users don’t know what “Wheelchair :)” mean.<br>
-                            - Two participants mentioned they don’t know what “amenities” is.<br>
-                            Solution: Change “walk” to “travel”; “:)” to “Accessible”; “Amenities” to “Shop, Dine & Restrooms”. </p>
-                        </ul>
+                    <ul class="col-lg-4 col-md-4">
+                        <div class="imgcontainer">
+                            <img src="assets/img/gatepal/usability testing/Check In Counter_route1.png" data-action="zoom">
+                        </div>
+                    </ul>
+                    <ul class="col-lg-8 col-md-8">
+                        <p style="text-align: left; padding-bottom: 20px;">Issue 1: Time details’ icon so close to “Go” button that users ignore the small “i”icon. <br>
+                        Solution: Move the info button next to “30 mins”. Also, the info is about the time, so it will make two functions better integrated.<br><br>
+                        Issue 2: The wording should be as clear as possible. Try to avoid any confusion<br>
+                        - The wording of “walk” makes users confuse especially when connects with “wheelchair” below. (Users wondered why wheelchair still needs walk)<br>
+                        - Users don’t know what “Wheelchair :)” mean.<br>
+                        - Two participants mentioned they don’t know what “amenities” is.<br>
+                        Solution: Change “walk” to “travel”; “:)” to “Accessible”; “Amenities” to “Shop, Dine & Restrooms”. </p>
+                    </ul>
                 </ul> <br><br>
                 <ul class="row">
-                        <ul class="col-lg-5 col-md-5">
-                            <p style="text-align: left; padding-bottom: 20px;">Issue 1: Users need explicit explanation of what the functionality is<br>
-                            - Users don’t know what the contact info is for. And one participant don’t know the image is the boarding pass.<br>
-                            Solution: Add ”Airport Assistance” title for the contact info, and “boarding pass” for the image.<br><br>
-                            Issue 2: Most users mentioned that the expedite process was somehow confusing. They were neither sure about the meaning of it nor realized it was clickble. It’s better to simplify the selection process of the expedite options.<br>
-                            Solution: We should provide clear actionable button to simplify the selection process. That is, change the button to an infobar, and contains one major actionable button.</p>
-                        </ul>
-                        <ul class="col-lg-3 col-md-3">
-                            <div class="imgcontainer">
-                                <img src="assets/img/gatepal/usability testing/Flight.png" data-action="zoom">
-                            </div>
-                        </ul>
-                        <ul class="col-lg-4 col-md-4">
-                            <div class="imgcontainer">
-                                <img src="assets/img/gatepal/usability testing/Route Detail.png" data-action="zoom">
-                            </div>
-                        </ul>
+                    <ul class="col-lg-5 col-md-5">
+                        <p style="text-align: left; padding-bottom: 20px;">Issue 1: Users need explicit explanation of what the functionality is<br>
+                        - Users don’t know what the contact info is for. And one participant don’t know the image is the boarding pass.<br>
+                        Solution: Add ”Airport Assistance” title for the contact info, and “boarding pass” for the image.<br><br>
+                        Issue 2: Most users mentioned that the expedite process was somehow confusing. They were neither sure about the meaning of it nor realized it was clickble. It’s better to simplify the selection process of the expedite options.<br>
+                        Solution: We should provide clear actionable button to simplify the selection process. That is, change the button to an infobar, and contains one major actionable button.</p>
+                    </ul>
+                    <ul class="col-lg-3 col-md-3">
+                        <div class="imgcontainer">
+                            <img src="assets/img/gatepal/usability testing/Flight.png" data-action="zoom">
+                        </div>
+                    </ul>
+                    <ul class="col-lg-4 col-md-4">
+                        <div class="imgcontainer">
+                            <img src="assets/img/gatepal/usability testing/Route Detail.png" data-action="zoom">
+                        </div>
+                    </ul>
                 </ul> 
-
             </div>
 
             <div id="Final_Design">
@@ -243,16 +246,15 @@
                 <iframe width="438" height="930" src="https://invis.io/WUN9O3QJACS" frameborder="0" allowfullscreen></iframe>
             </div>
                 <br><br><br><br>
-
         </div>
     </div>
 
     <div class="bottom-nav">
-        <div class="nav nav-left">
-            <a href="GatePal.html" class="nav-active">PREVIOUS PROJECT: GATEPAL</a>
+        <div class="bottom-nav-a nav-left">
+            <a href="Tencent.html" class="nav-active">PREVIOUS PROJECT: TENCENT</a>
         </div>
-        <div class="nav nav-right">
-            <a href="index.html#mini-projects" class="nav-active">OTHER MINI PROJECTS</a>
+        <div class="bottom-nav-a nav-right">
+            <a href="InfoNice.html" class="nav-active">NEXT PROJECT: INFONICE</a>
         </div>
     </div>
 </div>

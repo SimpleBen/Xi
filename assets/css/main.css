@@ -1,6 +1,6 @@
-@import url("http://cdn.bootcss.com/font-awesome/4.6.0/css/font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i");
-@import url("http://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i");
+@import url("http://fonts.googleapis.com/css?family=Montserrat:400,700"); */
 /* Reset */
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -40,6 +40,14 @@ body {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+}
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(../font/SourceSansPro.ttf);
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat Regular'), local('Montserrat-Regular'), url(../font/Montserrat.ttf);
 }
 
 /* Page */
@@ -2800,22 +2808,22 @@ input[type="submit"].disabled, input[type="submit"]:disabled,  input[type="reset
 }
 
 @media screen and (max-width: 736px) {
-.panel.banner .content {
-	padding: 2.8875rem 1.75rem 1.3875rem 1.75rem;
-	-moz-flex-basis: 60%;
-	-webkit-flex-basis: 60%;
-	-ms-flex-basis: 60%;
-	flex-basis: 60%;
-}
-.panel.banner .content > .actions:last-child {
-	margin-bottom: 1.5rem;
-}
-.panel.banner .image {
-	-moz-flex-basis: 40%;
-	-webkit-flex-basis: 40%;
-	-ms-flex-basis: 40%;
-	flex-basis: 40%;
-}
+	.panel.banner .content {
+		padding: 2.8875rem 1.75rem 1.3875rem 1.75rem;
+		-moz-flex-basis: 60%;
+		-webkit-flex-basis: 60%;
+		-ms-flex-basis: 60%;
+		flex-basis: 60%;
+	}
+	.panel.banner .content > .actions:last-child {
+		margin-bottom: 1.5rem;
+	}
+	.panel.banner .image {
+		-moz-flex-basis: 40%;
+		-webkit-flex-basis: 40%;
+		-ms-flex-basis: 40%;
+		flex-basis: 40%;
+	}
 }
 
 @media screen and (max-width: 736px) and (orientation: portrait) {
@@ -3007,9 +3015,9 @@ input[type="submit"].disabled, input[type="submit"]:disabled,  input[type="reset
 	transition-delay: 0.25s;
 	cursor: default;
 	position: relative;
-	height: 32rem;
+	height: 34rem;
 	box-shadow: 0 2rem 4rem 0.25rem rgba(0,0,0,0.25);
-	margin-top: 4em;
+	margin-top: 6em;
 }
 #wrapper > .scrollZone {
 	position: fixed;
@@ -3167,16 +3175,17 @@ body {
 	position: fixed;
     width: 800px;
     height: 15%;
-    top: calc( 5% - 8px );
+    top: calc( 5% - 22px );
     left: calc( 50% - 400px);
 }
 
-.bottom-nav{
-	width: 80%;
-	height: 70px;
-	bottom: 10%;
-	margin: 0 auto;
-	margin-bottom: 4em;
+.bottom-nav {
+    width: 100%;
+    height: 100px;
+    bottom: 10%;
+    margin: 0 auto;
+    margin-top: 0em;
+    padding: 0 3em;
 }
 .bottom-nav > .nav-left {
 	width: auto;
@@ -3186,7 +3195,29 @@ body {
 	width: auto;
 	float: right;
 }
-.logo {
+.bottom-nav-a {
+	margin-top: 40px;
+}
+.bottom-nav-a a {
+    position: relative;
+    float: left;
+    list-style: none;
+    font-size: 17px;
+    padding: 0;
+    margin: 0 15px;
+    cursor: pointer;
+	color: #FFF;
+	text-decoration: none;
+	border-bottom: 0px solid #FFF;
+    transition: all 0.1s;
+}
+.bottom-nav-a a:hover {
+	color: #FFF;
+	border-bottom: 3px solid #FFF;
+	transition: all 0.1s;
+}
+
+.top-nav .logo {
     width: 4em;
     height: 2em;
     background: url(../../images/logo.png) no-repeat;
@@ -3194,14 +3225,14 @@ body {
     margin: 0 auto;
     margin-top: 20px;
 }
-.nav {
-    width: 473px;
+.top-nav .nav {
+    width: 320px;
     height: 30px;
     margin: 0 auto;
     padding: 0;
     margin-top: 35px;
 }
-.nav a {
+.top-nav .nav a {
     position: relative;
     float: left;
     list-style: none;
@@ -3217,7 +3248,7 @@ body {
     -webkit-background-clip: text;
     transition: all 0.5s;
 }
-.nav a:hover{
+.top-nav .nav a:hover{
 	color: transparent;
     background-size: cover;
 	background: linear-gradient(45deg,#8A2387,#E94057, #F27121,white,white);
@@ -3239,7 +3270,7 @@ body {
 	-o-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 }
-.nav-active:after {
+.top-nav .nav-active:after {
     height: 3px!important;
 	transition: all 0.3s;
 	-webkit-transition: all 0.3s;
@@ -3258,14 +3289,14 @@ body {
 		z-index: 99;
 		background: rgba(0, 0, 0, 0.8);
 	}
-	.nav {
+	.top-nav .nav {
 		width: auto;
 		position: absolute;
 		padding: 0;
 		bottom: 16px;
 		right: 30px;
 	}
-	.logo {
+	.top-nav .logo {
 		position: absolute;
 		width: 4em;
 		height: 2em;
@@ -3278,7 +3309,7 @@ body {
 }
 
 @media screen and (max-width: 415px){
-	.nav {
+	.top-nav .nav {
 		font-size: 13px;
 		width: auto;
 		position: absolute;
@@ -3286,8 +3317,8 @@ body {
 		bottom: 16px;
 		right: 3%;
 	}
-	.nav a{margin: 0 8px;font-size: 14px;}
-	.logo {
+	.top-nav .nav a{margin: 0 8px;font-size: 14px;}
+	.top-nav .logo {
 		position: absolute;
 		width: 2em;
 		height: 1em;
@@ -3318,8 +3349,8 @@ body {
     font-size: 1em;
 }
 
-.main-page{
-	background: rgba(255, 255, 255, 0.12);
+.main-page {
+	background: rgba(255, 255, 255, 0.1);
 	/* border: 6px solid #FFF; */
 	background-image: none !important;
 }
@@ -3494,8 +3525,8 @@ img.profile-photo:hover::before {
     top: 0;
     bottom: 0;
     margin: auto;
-    width: 2em;
-    height: 2em;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.6);
     z-index: 999;
@@ -3503,10 +3534,10 @@ img.profile-photo:hover::before {
 .tip::before {
     content: '';
     position: absolute;
-    top: -8px;
-    left: -8px;
-    width: 3em;
-    height: 3em;
+    top: -5px;
+    left: -5px;
+    width: 45px;
+    height: 45px;
     background: rgba(255, 255, 255, 0.3);
 	border-radius: 50%;
 	animation: tip 1.6s cubic-bezier(0.25, 0.1, 0.62, 0.69) infinite;
@@ -3545,4 +3576,79 @@ img.profile-photo:hover::before {
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	-moz-transition: all 0.3s;
+}
+
+.panel.piece {
+	width: 28em;
+	cursor: pointer;
+}
+h2.major {
+    font-size: 1.65rem;
+    font-weight: 600;
+}
+.content p {
+	color: #FFF;
+}
+h4.major-cate {
+    font-size: 0.68em;
+	color: rgba(255, 255, 255, 0.4);
+	padding: 0.6em 0;
+}
+.panel.spotlight .content {
+	justify-content: flex-end;
+	background: rgba(255, 255, 255, 0.1);
+}
+.major-img {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#first, #second, #third, #forth, #fifth, #sixth, #first:hover, #second:hover, #third:hover, #forth:hover, #fifth:hover, #sixth:hover {
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+}
+
+#first:hover {
+	background: #FFF;
+}
+#first:hover h2, #first:hover p {
+	color: rgba(0, 77, 220, 0.78);
+}
+#first:hover h4 {
+	color: rgba(0, 77, 220, 0.5);
+}
+#first:hover h2::after {
+	background-color: rgba(0, 77, 220, 0.5);
+}
+
+#second:hover {
+	background: #91A7DD;
+}
+#second:hover h2, #second:hover p {
+	color: #35466c;
+}
+#second:hover h4 {
+	color: rgba(53, 70, 108, 0.5);
+}
+#second:hover h2::after {
+	background-color: rgba(53, 70, 108, 0.5);
+}
+
+#third:hover {
+	background: #E699BC;
+}
+
+#forth:hover {
+	background: #7481E5;
+}
+
+#fifth:hover {
+	background: #7EC8DC;
+}
+
+#sixth:hover {
+	background: #FAAB73;
 }

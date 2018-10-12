@@ -32,10 +32,10 @@ $(function(){
                 $(".project-aside").removeClass('project-aside-float');
                 $(".float-nav").removeClass('float-nav-active')
             }
-            if($('.top-nav').css('opacity')>0 || whs < 200){
-                $('.top-nav').css('opacity',(60-whs)/60);
-                $('.top-nav').show();
-            }else{$('.top-nav').hide();}
+            // if($('.top-nav').css('opacity')>0 || whs < 200){
+            //     $('.top-nav').css('opacity',(60-whs)/60);
+            //     $('.top-nav').show();
+            // }else{$('.top-nav').hide();}
         }
         toggleSelect(whs);
     });

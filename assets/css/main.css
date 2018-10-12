@@ -51,10 +51,25 @@ body {
 }
 
 /* Page */
-::-webkit-scrollbar {
-    display: none;
+::-webkit-scrollbar {  
+    width: 6px;
+	height: 10px;
+	background-color: #0b2570;
 }
-	@-moz-keyframes load-spinner {
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+::-webkit-scrollbar-thumb:hover{  
+    border-radius: 10px;
+	background-color: rgba(255, 255, 255, 1);
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #0b2570;
+} 
+
+@-moz-keyframes load-spinner {
  0% {
  -moz-transform: rotate(0deg);
  -webkit-transform: rotate(0deg);
@@ -3015,9 +3030,9 @@ input[type="submit"].disabled, input[type="submit"]:disabled,  input[type="reset
 	transition-delay: 0.25s;
 	cursor: default;
 	position: relative;
-	height: 34rem;
+	height: 30rem;
 	box-shadow: 0 2rem 4rem 0.25rem rgba(0,0,0,0.25);
-	margin-top: 6em;
+	margin-top: 2.2em;
 }
 #wrapper > .scrollZone {
 	position: fixed;
@@ -3453,6 +3468,7 @@ img.profile-photo:hover::before {
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	display: none;
 }
 
 .hide-more {

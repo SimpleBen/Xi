@@ -20,6 +20,9 @@ img{
    margin: auto;
 
 }
+::-webkit-scrollbar {  
+    display: none;
+}
 
 .hidden{
     display: none;
@@ -515,6 +518,9 @@ p.project-desc {
   font-weight: 300;
   line-height: 25px;
   color: #3c3c3c;
+}
+.top-nav {
+    display: none;
 }
 
 .top-img{

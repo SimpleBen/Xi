@@ -53,7 +53,7 @@ body {
 /* Page */
 ::-webkit-scrollbar {  
     width: 6px;
-	height: 10px;
+	height: 3px;
 	background-color: #0b2570;
 }
 ::-webkit-scrollbar-thumb {
@@ -307,14 +307,14 @@ h1.major-none{
 h1.major, h2.major, h3.major {
 	position: relative;
 }
-h1.major:after, h2.major:after, h3.major:after {
+/*h1.major:after, h2.major:after, h3.major:after {
 	content: '';
 	position: absolute;
 	left: 0;
 	width: 3.5rem;
 	height: 0.1rem;
 	background-color: rgba(255, 255, 255, 0.25);
-}
+}*/
 h1 {
 	font-size: 3rem;
 	line-height: 1.2;
@@ -332,7 +332,7 @@ h2 {
 	line-height: 1.2;
 }
 h2.major {
-	margin: 0 0 1.9875rem 0;
+	margin: 0 0 0.1rem 0;
 }
 h2.major:after {
 	bottom: -1.2rem;
@@ -529,7 +529,7 @@ input[type="text"],  input[type="password"],  input[type="email"],  input[type="
 	text-decoration: none;
 	width: 100%;
 }
- input[type="text"]:invalid,  input[type="password"]:invalid,  input[type="email"]:invalid,  input[type="tel"]:invalid,  select:invalid,  textarea:invalid {
+input[type="text"]:invalid,  input[type="password"]:invalid,  input[type="email"]:invalid,  input[type="tel"]:invalid,  select:invalid,  textarea:invalid {
  box-shadow: none;
 }
 input[type="text"]:focus,  input[type="password"]:focus,  input[type="email"]:focus,  input[type="tel"]:focus,  select:focus,  textarea:focus {
@@ -3599,8 +3599,8 @@ img.profile-photo:hover::before {
 	cursor: pointer;
 }
 h2.major {
-    font-size: 1.65rem;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 .content p {
 	color: #FFF;
@@ -3608,7 +3608,12 @@ h2.major {
 h4.major-cate {
     font-size: 0.68em;
 	color: rgba(255, 255, 255, 0.4);
-	padding: 0.6em 0;
+	padding: 1em 0;
+}
+
+p.major {
+	font-size: 0.68rem;
+	padding: 0 0;
 }
 .panel.spotlight .content {
 	justify-content: flex-end;
@@ -3654,7 +3659,16 @@ h4.major-cate {
 }
 
 #third:hover {
-	background: #E699BC;
+	background: #fff;
+}
+#third:hover h2, #third:hover p {
+	color: rgba(116, 116, 116);
+}
+#third:hover h4 {
+	color: rgba(116, 116, 116, 0.5);
+}
+#third:hover h2::after {
+	background-color: rgba(116, 116, 116, 0.5);
 }
 
 #forth:hover {

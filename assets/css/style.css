@@ -4,20 +4,23 @@
     display: inline-block;
 }
 #aboutProfile img{
-	float: left;
+	float: right;
 	width: 35%;
 }
 #aboutProfile_text {
 	width: 60%;
-	float: right;
+	float: left;
 }
 #aboutProfile h3{
-	font-size: 1.2em;
+	font-size: 1.4em;
 }
 #aboutProfile h4{
-	font-size: 1em;
+	font-size: 1.1em;
 	font-family: 'Avenir Next', sans-serif;
 	line-height: 23px;
+}
+#aboutProfile h4 strong{
+	font-weight: 500;
 }
 
 #design_philosophy {
@@ -29,7 +32,7 @@
 	font-size: 1.2em;
 }
 #design_philosophy h4{
-	font-size: 1em;
+	font-size: 1.1em;
 	font-family: 'Avenir Next', sans-serif;
 	line-height: 23px;
 }
@@ -46,10 +49,10 @@
     display: inline-block;
 }
 #About_this_site h3{
-	font-size: 1.2em;
+	font-size: 1.4em;
 }
 #About_this_site h4{
-	font-size: 1em;
+	font-size: 1.1em;
 	font-family: 'Avenir Next', sans-serif;
 	line-height: 23px;
 }
@@ -166,11 +169,11 @@ Content boxes
 
 .content-box-title {
 	margin: 15px 0 0;
-	font-size: 1.1em;
+	font-size: 1.2em;
 	text-align: center;
 }
 
 .content-box-text {
-	margin: 10px 0 0;
-	font-size: 0.9em;
+	margin: 10px 15px 0;
+	font-size: 1em;
 }

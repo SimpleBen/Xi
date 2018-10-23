@@ -9,7 +9,8 @@
 	</head>
 	<body>
 		<!-- star -->
-		<div class="star-up"><div class="stars"></div></div>
+		<!-- <div class="star-up"><div class="stars"></div></div> -->
+		<canvas id="starts">该浏览器不支持canvas</canvas>
 		<div class="mask"></div>
 		<div id="page-wrapper">
 			<div id="wrapper">
@@ -107,7 +108,9 @@
 		<script src="assets/js/resize.js"></script>
 		<script src="assets/js/main.js"></script>
 		<script src='assets/js/stopExecutionOnTimeout.js'></script>
-		<script>
+		<script src='assets/js/stars.js'></script>
+		<script>stars("starts",225,300,60,2,270000,0.5)</script>
+		<!-- <script>
 				$(document).ready(function () {
 					var stars = 600;
 					var $stars = $('.stars');
@@ -131,6 +134,6 @@
 					});
 				});
 			
-		</script>
+		</script> -->
 	</body>
 </html>

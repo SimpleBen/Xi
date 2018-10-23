@@ -1,6 +1,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
-/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i");
-@import url("http://fonts.googleapis.com/css?family=Montserrat:400,700"); */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i");
+@import url("http://fonts.googleapis.com/css?family=Montserrat:400,700");
 /* Reset */
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -41,14 +41,6 @@ body {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-@font-face {
-	font-family: 'Source Sans Pro';
-	src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(../font/SourceSansPro.ttf);
-}
-@font-face {
-	font-family: 'Montserrat';
-	src: local('Montserrat Regular'), local('Montserrat-Regular'), url(../font/Montserrat.ttf);
-}
 
 /* Page */
 ::-webkit-scrollbar {  
@@ -66,7 +58,7 @@ body {
 }
 ::-webkit-scrollbar-track {
     border-radius: 10px;
-    background-color: #0b2570;
+    background-color: #000036;
 } 
 
 @-moz-keyframes load-spinner {
@@ -3156,6 +3148,10 @@ body {
 	  transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);
 	}
   }
+  canvas#starts {
+	position: fixed;
+	z-index: -1;
+}
   .stars {
 	transform: perspective(500px);
 	transform-style: preserve-3d;
@@ -3558,6 +3554,11 @@ img.profile-photo:hover::before {
 	border-radius: 50%;
 	animation: tip 1.6s cubic-bezier(0.25, 0.1, 0.62, 0.69) infinite;
 }
+.tip i {
+    font-size: 17px;
+    margin-top: 8px;
+    margin-left: 11px;
+}
 
 @keyframes tip {
 	0% { transform: scale(0); opacity: 1; }
@@ -3595,7 +3596,7 @@ img.profile-photo:hover::before {
 }
 
 .panel.piece {
-	width: 28em;
+	width: 24em;
 	cursor: pointer;
 }
 h2.major {

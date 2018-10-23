@@ -117,13 +117,13 @@
 					$wrapper = $('#wrapper');
 
 			// Disable animations/transitions until the page has loaded.
-				$body.addClass('is-loading');
+				// $body.addClass('is-loading');
 
-				$window.on('load', function() {
-					window.setTimeout(function() {
-						$body.removeClass('is-loading');
-					}, 100);
-				});
+				// $window.on('load', function() {
+				// 	window.setTimeout(function() {
+				// 		$body.removeClass('is-loading');
+				// 	}, 100);
+				// });
 
 			// Tweaks/fixes.
 
@@ -373,7 +373,7 @@
 					(function() {
 
 						var	$left = $('<div class="scrollZone left"></div>'),
-							$right = $('<div class="scrollZone right"><div class="tip"></div></div>'),
+							$right = $('<div class="scrollZone right"><div class="tip"><i class="fa fa-arrow-right"></i></div></div>'),
 							$zones = $left.add($right),
 							paused = false,
 							intervalId = null,

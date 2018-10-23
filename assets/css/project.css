@@ -389,7 +389,6 @@ a.btn-warning{
 
 iframe {
     width: 100%;
-    height: 870px;
     margin: 0 auto;
 }
 
@@ -413,8 +412,9 @@ iframe.youtube{
 }
 
 h2.page-header{
-    color: #333;
+    color: #4A4A4A;
     font-size: 2em;
+    font-weight: 700;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     padding-top: 70px;
@@ -543,4 +543,24 @@ p.project-desc {
     z-index: 999;
     left: 10px;
     top: 10px;
+}
+
+p.left-vertical-line {
+    padding-left: 1.6rem;
+    border-left-width: 0.4rem;
+    border-left-style: solid;
+    border-left-color: #3A98DB;
+}
+
+p.margin-top-2 {
+    margin-top: 2rem;
+    font-style: italic;
+}
+
+span.key-word {
+    color: #3c3c3c;
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 30px;
 }

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>InfoNice - Projects</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/project.css">
+<link rel="stylesheet" href="assets/css/zoom.css">
+<style>
+    .top-img { background-color:#7481E5; }
+    .select, .bottom-nav, .select:before { color: #7481E5 !important; }
+</style>
+</head>
+
+<body>
+<div id="project-page">
+    <div class="top-nav">
+        <a href="index.html"><div class="logo"></div></a>
+        <div class="nav">
+            <a href="index.html" class="nav-active">PORTFOLIO</a>
+            <a href="about.html">ABOUT</a>
+            <a href="assets/Resume_Xi Chen.pdf" target="_blank">RESUME</a>
+        </div>
+    </div>
+    <div class="float-nav"></div>
+
+    <span class="project-nav-toggle"><i></i></span>
+    <aside class="project-aside">
+        <div class="project-aside-container">
+      <!-- <button onclick="location.href='index.html#second'" type="button" class="back-btn">Back</button> -->
+            <nav class="project-main-menu">
+                <ul class="menu-ul">
+                    <li><a href="#overview" class="sub p1">OVERVIEW</a></li>
+                    <li><a href="#problem" class="sub p2">PROBLEM</a></li>
+                    <li><a href="#solution" class="sub p3">SOLUTION</a></li>
+                    <li><a href="#design" class="sub p4">FINAL DESIGN</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div id="project-main">
+        <img class="top-img" src="assets/img/infnote/overview.png">
+        <div class="project-narrow-content" >
+            <div id="overview">
+                <h2 class="page-header">OVERVIEW</h2>
+                <hr><br><br>
+                <p class="project-desc">​<strong>This is a project marks the beginning of my freelance designer career. Thanks Haoqian Zhang for inviting me to join this project! I’m the only designer in this project and finished designing iOS App and website. Right now we have finished version 1.0 and just submitted our app to iOS App Store.</strong></p><br><br><br>
+                <p class="project-desc">​The target for this project to use decentralization to provide safe and free online communication, and also complete transparency for users’ posts and comments.</p>
+                <img style = "width:100%" src="assets/img/infnote/target.png">
+            </div><br><br><br><br>
+
+            <div id="problem">
+                <h2 class="page-header">PROBLEM SPACE</h2> 
+                <hr>
+                <p class="project-desc">​Online forum is a place aims for safe and open discussion where users can reflect and express what they care about in their daily lives. Right now, most websites store all users’ data in a centered place, which is easy to be censored or filtered. So it happens when government will censor content that is “controversial”.</p>
+                <p class="project-desc">​Instead of storing data in a centered place, could we decentralize users’ data (including posts, comments or every actions that will be recorded) that make sure it cannot be filtered or deleted and provide a complete transparent online environment?</p><br>
+                <img style = "width:100%" src="assets/img/infnote/decentralize.png">
+            </div><br><br><br>
+
+            <div id="solution">
+                <h2 class="page-header">SOLUTION</h2> 
+                <hr>
+
+                <h3 class="overview_subtitle">Advantages of blockchain based forum compared with traditional forums</h3><br><br>
+                <img style = "width:100%" src="assets/img/infnote/freely.png"><br><br><br>
+                <img style = "width:100%" src="assets/img/infnote/safety.png"><br><br><br><br>
+
+                <h3 class="overview_subtitle">Apart from advantages, is there any challenges? </h3><br><br>
+                <p class="left-vertical-line margin-top-1">
+                    <span class="key-word">Biggest Challenge - Complicated Username</span>
+                </p>
+                <p class="project-desc">​As decentralized means system cannot use compare logic for creating a username, users can only be recognized by a random generated long string instead of a prefered username. So how can user login? Traditionally, users need to remember the long string of public address or scan a paper QR code for private key. But is there any other solutions?</p>
+
+                <p class="left-vertical-line margin-top-1">
+                    <span class="key-word">Our Solution</span>
+                </p>
+                <p class="project-desc">​Support users store private key and public address to iCloud. And everytime users try to login, app will automatically get data from icloud. </p><br>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <img style = "width:80%" src="assets/img/infnote/login_before.gif"><br>
+                        <h4 class="mini-title">BEFORE</h4>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <img style = "width:80%" src="assets/img/infnote/login_after.gif"><br>
+                        <h4 class="mini-title">AFTER</h4>
+                    </div>
+                </div>
+
+                <br><br><br><br>
+
+                <p class="left-vertical-line margin-top-1">
+                    <span class="key-word">Challenge 2 - Huge effort of “like” function</span>
+                </p>
+                <p class="project-desc">​As blockchain can only add content instead of revising later, system cannot change the number of how many people ‘like’ the post but add a new ‘like’ action to database. So the implementation effort of “like” function is pretty high. So besides how many ‘replies’ posts have, is there any other features that can prioritize posts?</p>
+
+                <p class="left-vertical-line margin-top-1">
+                    <span class="key-word">Our Solution</span>
+                </p>
+                <img style = "width:100%" src="assets/img/infnote/top.png" data-action="zoom"><br>
+            </div><br><br>
+
+            <div id="design">
+                <h2 class="page-header">FINAL DESIGN</h2> 
+                <hr>
+
+                <h3 class="overview_subtitle">Key Features</h3>
+                <img style = "width:100%" src="assets/img/infnote/follow.png" data-action="zoom"><br>
+                <img style = "width:100%" src="assets/img/infnote/hierarchy.png" data-action="zoom"><br>
+                <img style = "width:100%" src="assets/img/infnote/new post.png" data-action="zoom"><br>
+
+                <br><br>
+                <h3 class="overview_subtitle">Interface Design</h3>
+                <img style = "width:100%" src="assets/img/infnote/design1.png" data-action="zoom"><br>
+                <img style = "width:100%" src="assets/img/infnote/design2.png" data-action="zoom"><br>
+                <img style = "width:100%" src="assets/img/infnote/design3.png" data-action="zoom"><br>
+                <img style = "width:100%" src="assets/img/infnote/design4.png" data-action="zoom"><br>
+                <img style = "width:100%" src="assets/img/infnote/design5.png" data-action="zoom"><br>
+                <img style = "width:100%" src="assets/img/infnote/design6.png" data-action="zoom"><br>
+
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+    <div class="bottom-nav">
+        <div class="bottom-nav-a nav-left">
+            <a href="GatePal.html" class="nav-active">PREVIOUS PROJECT: GATEPAL</a>
+        </div>
+        <div class="bottom-nav-a nav-right">
+            <a href="index.html#mini-projects" class="nav-active">OTHER MINI PROJECTS</a>
+        </div>
+    </div>
+</div>
+</body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.2.0/js/transition.js"></script>
+<script src="assets/js/project.js"></script>
+<script src="assets/js/zoom.js"></script>
+</html>
+

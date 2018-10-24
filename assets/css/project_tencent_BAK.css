@@ -2,81 +2,40 @@ body{
     width: auto;
     height: auto;
     font-size: 13px;
-    background: #FFF;
 }
 body::before{
     display: none;
 }
 h1, h2, h3, h4, h5, h6,strong, b{
-    color: #000110;
+    color: hsla(0,0%,100%,.8);
 }
 a:hover {
     border-bottom-color: transparent;
     color:rgb(143, 160, 255)
 }
 img{
-   /* margin: 20px 0;*/
+   margin: 20px 0;
    display: block;
-   margin: auto;
+   margin-top: 40px;
 
-}
-::-webkit-scrollbar {  
-    display: none;
 }
 
 .hidden{
     display: none;
 }
 #project-page {
-    width: 100%;
+    width: 70%;
     margin: 0 auto;
+    padding: 0px 30px;
 }
 #project-main {
-    background: #FFF;
     padding: 0px;
-    color: #000110;
+    margin-top: 240px;
+    margin-bottom: 50px;
+    color: hsla(0,0%,100%,.8);
 }
 .project-narrow-content{
-    padding: 30px 20%;
-}
-.float-nav-hide {
-    opacity: 0 !important;
-    top: -80px !important;
-}
-.float-nav {
-    position: fixed;
-    width: 100%;
-    height: 68px;
-    z-index: 99;
-    top: 0px;
-    opacity: 1;
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-}
-.float-nav .logo {
-    width: 4em;
-    height: 2em;
-    background: url(../../images/logo.png) no-repeat;
-    background-size: contain;
-    margin-top: 20px;
-    margin-left: 25px;
-}
-.float-nav .nav {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-}
-.float-nav .nav a {
-    color: rgba(255, 255, 255, 0.65);
-    text-decoration: none;
-    border: 0px;
-    font-size: 16px;
-    padding: 0 10px;
-}
-.float-nav .nav a:hover {
-    color: #FFFFFF;
+    padding: 30px 40px;
 }
 
 ul.row {
@@ -124,28 +83,23 @@ ul.row {
 }
 
 .project-aside {
-    position: fixed;
-    margin-left: -300px;
-    height: 100%;
-    z-index: 9;
-    display: table;
+    position: absolute;
+    margin-left: -15%;
     opacity: 0;
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
 }
 .project-aside-float {
-    margin-left: 20px;
-    transition: all 1s;
+    position: fixed;
+    margin-left: -15%;
+    top: 20px !important;
     opacity: 1;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-}
-.project-aside-container {
-    display: table-cell;
-    vertical-align: middle;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
 }
 .project-main-menu li {
     list-style: none;
@@ -153,7 +107,6 @@ ul.row {
     margin: 10px 0;
 }
 .project-main-menu li a{
-    color: #a7a7a7;
     border-bottom: none;
     text-decoration: none;
 }
@@ -167,7 +120,7 @@ ul.row {
 }
 li.font_padding a {
     font-size: 120%;
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
 }
 .sub{
@@ -187,7 +140,7 @@ li.font_padding a {
 .sub:before{
     content: '';
     position: absolute;
-    margin-top: 0.1em;
+    margin-top: 0.2em;
     width: 2px;
     height: 1.4em;
     background: #FFF;
@@ -203,7 +156,7 @@ li.font_padding a {
     position: absolute;
     width: 2px;
     height: 1.4em;
-    background: #a7a7a7;
+    background: #FFF;
     opacity: 1;
     left: 10px;
     transition: all 0.3s;
@@ -212,6 +165,7 @@ li.font_padding a {
     -o-transition: all 0.3s;
 }
 .select {
+    color: rgb(143, 160, 255)!important;
     padding-left: 20px;
     transition: all 0.3s;
     -webkit-transition: all 0.3s;
@@ -233,7 +187,7 @@ li.font_padding a {
     position: absolute;
     width: 2px;
     height: 18px;
-    background: #b4bfff;
+    background: #FFF;
     opacity: 1;
     left: 10px;
     transition: all 0.3s;
@@ -390,6 +344,7 @@ a.btn-warning{
 
 iframe {
     width: 100%;
+    height: 870px;
     margin: 0 auto;
 }
 
@@ -413,17 +368,16 @@ iframe.youtube{
 }
 
 h2.page-header{
-    color: #4A4A4A;
+    color: hsla(0,0%,100%,.9);
     font-size: 2em;
-    font-weight: 700;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    padding-top: 70px;
+    padding-top: 100px;
 }
 
 hr {
-  color: black;
-  background-color: black;
+  color: hsla(0,0%,100%,.9);
+  background-color: hsla(0,0%,100%,.9);
   border: none;
   margin: 0 auto;
   height: 1px;
@@ -442,8 +396,8 @@ div.highlight{
 }
 
 h4.mini-title{
-  color:#4A4A4A;
-  font-size:1.1em;
+  color: hsla(0,0%,100%,.9);
+  font-size:1.2em;
   font-family: 'Futura', sans-serif;
   text-align: left;
 }
@@ -499,10 +453,10 @@ h3.header{
 }
 
 h3.overview_subtitle{
-    color: #4A4A4A;
+    color: #8FC3FF;
     font-size: 1.3em;
     font-weight: 800;
-    padding-top: 20px;
+    padding-top: 60px;
     text-align: left;
     font-family: "Ubuntu", sans-serif;
     padding-bottom: 10px;
@@ -517,40 +471,15 @@ p.project-desc {
   font-family: 'Avenir Next', sans-serif;
   font-size: 1.1em;
   font-weight: 300;
-  line-height: 25px;
-  color: #3c3c3c;
-}
-.top-nav {
-    display: none;
-}
-
-.top-img{
-    height: 700px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: center;
-    background-position-y: 60px;
-}
-.zoom-img {
-    position: relative;
-    margin-top: 2em;
-}
-.scrolltip {
-    padding: 5px 15px;
-    border-radius: 6px;
-    color: #FFF;
-    background: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    z-index: 999;
-    left: 10px;
-    top: 10px;
+  line-height: 30px;
+  color: hsla(0,0%,100%,.8);
 }
 
 p.left-vertical-line {
     padding-left: 1.6rem;
     border-left-width: 0.4rem;
     border-left-style: solid;
-    border-left-color: #3A98DB;
+    border-left-color: #8FC3FF;
 }
 
 p.margin-top-2 {
@@ -559,9 +488,37 @@ p.margin-top-2 {
 }
 
 span.key-word {
-    color: #3c3c3c;
+    color: hsla(0,0%,100%,.9);
     font-family: 'Avenir Next', sans-serif;
     font-size: 1.1em;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 30px;
+}
+
+.top-img{
+    width: 100%;
+    margin: 0;
+}
+.video {
+    position: absolute;
+    left: 0;
+    top: 240px;
+}
+
+.overview-table {
+    margin: 0 auto;
+    width: 55%;
+}
+.overview-table tbody tr {
+    background: none !important;
+    border: 0;
+}
+.overview-table tbody tr td {
+    padding: 0.55rem 0.75rem;
+}
+td.table-left {
+    font-weight: 700;
+}
+.zoom-overlay{
+    background: #000 !important;
 }

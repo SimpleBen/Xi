@@ -3022,7 +3022,7 @@ input[type="submit"].disabled, input[type="submit"]:disabled,  input[type="reset
 	transition-delay: 0.25s;
 	cursor: default;
 	position: relative;
-	height: 30rem;
+	height: 23rem;
 	box-shadow: 0 2rem 4rem 0.25rem rgba(0,0,0,0.25);
 	margin-top: 2.2em;
 }

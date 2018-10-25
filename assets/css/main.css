@@ -2885,7 +2885,7 @@ input[type="submit"].disabled, input[type="submit"]:disabled,  input[type="reset
 	-webkit-justify-content: center;
 	-ms-justify-content: center;
 	justify-content: center;
-	padding: 3.5rem 3rem 2rem 3.5rem;
+	padding: 1rem 3rem 1rem 3.5rem;
 }
 .panel.spotlight .image {
 	position: absolute;
@@ -3596,7 +3596,7 @@ img.profile-photo:hover::before {
 }
 
 .panel.piece {
-	width: 24em;
+	width: 20em;
 	cursor: pointer;
 }
 h2.major {

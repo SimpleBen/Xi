@@ -1,26 +1,222 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/css/mini-project.css">
+<title>Align - Projects</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/project.css">
+<link rel="stylesheet" href="assets/css/zoom.css">
+<style>
+    .top-img, .bottom-nav, .select:before  { background-color:#7EC8DC; }
+    .float-nav { background-color:rgba(126, 200, 220, 0.9); }
+    .select { color: #7EC8DC !important; }
+    .left-vertical-line {border-left-color: #7EC8DC; }
+</style>
 </head>
 
 <body>
-
 <div id="project-page">
-    <div id="short-project-main">
-            <img class="short-top-img" src="images/align.png">
-            <div class="short-project-narrow-content" >
-                <div id="Overview">
-                    <h2 class="short-page-header">ALIGN</h2> 
-                   <!-- <hr class="short-hr">-->
-                        <p class="short-project-desc">ALIGN  is a route planning and navigation tool with environmental features. By using crowdsourcing, everyone can help to improve the accuracy!</p>
-                </div>
+    <div class="top-nav">
+        <a href="index.html"><div class="logo"></div></a>
+        <div class="nav">
+            <a href="index.html" class="nav-active">PORTFOLIO</a>
+            <a href="about.html">ABOUT</a>
+            <a href="assets/Resume_Xi Chen.pdf" target="_blank">RESUME</a>
+        </div>
+    </div>
+    <div class="float-nav"></div>
+
+    <span class="project-nav-toggle"><i></i></span>
+    <aside class="project-aside">
+        <div class="project-aside-container">
+      <!-- <button onclick="location.href='index.html#second'" type="button" class="back-btn">Back</button> -->
+            <nav class="project-main-menu">
+                <ul class="menu-ul">
+                    <li class="font_padding"><a href="#overview">OVERVIEW</a></li>
+                    <li class="font_padding"><a href="#Project1">CROWDSOURCING</a></li>
+                    <li><a href="#intro1" class="sub pT">Intro</a></li>
+                    <li><a href="#ideation1" class="sub pT">Ideation</a></li>
+                    <li><a href="#design consideration1" class="sub pT">Design Consideration</a></li>
+                    <li><a href="#final design1" class="sub pT">Final Design</a></li>
+
+                    <li class="font_padding"><a href="#Project2">NON-VISUAL UI</a></li>
+                    <li><a href="#intro2" class="sub pT">Intro</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div id="project-main">
+        <div class="top-img" style="background-image:url(assets/img/align/overview.png);"></div>
+        <div class="project-narrow-content" >
+            <div id="overview">
+                <h2 class="page-header">OVERVIEW</h2>
+                <hr>
+                <p class="project-desc">​ALIGN is the user-friendly route planning and navigation tool with special features that aid older adults and people with mobility or visual impairments. Pick your starting point, destination, and route conditions you care about, and ALIGN will generate a route that best suits your preference. The app will also notify you of upcoming route conditions during the turn by turn navigation.</p><br><br><br>
+
+                <h3 class="overview_subtitle">My Role</h3>
+                <p class="project-desc">​This is an ongoing project. Last year, <strong>I led iOS development and finally submitted version 1.0 to App Store in May 2018.</strong> For this semester, I just finished designing version 2.0 which focused on crowdsourcing, and working on version 3.0 right now focusing on non-visual UI.</p>
+                <img style = "width:100%" src="assets/img/align/role.png" data-action="zoom"><br><br><br><br>
+
+                <h3 class="overview_subtitle">Why route condition is crucial?</h3>
+                <p class="project-desc">​<strong>For people with different abilities, there are some route conditions especially matter to them.</strong> Knowing these route conditions in advance may affect whether they choose this route or not. Also, notify them during navigation can be a great relief. Like people with visual impairments, too much noise or huge pedestrian traffic will be hard for them to navigate. While it’s reassuring for them to know the existence of auditory walking signal or benches in advance. Besides, like people with mobility impairments, curb cut may affect whether they choose this route or not.</p>
+                <img style = "width:100%" src="assets/img/align/why route condition.png" data-action="zoom"><br><br><br><br>
+
+                <h3 class="overview_subtitle">How to generate and use route condition?</h3>
+                <p class="project-desc">​For Version 1.0, we use machine learning to recognize route conditions in Google Map’s street view. And then according to users’ preference, incorporating route conditions in route planning and navigation.</p>
+
+
+
+            </div><br><br><br><br>
+
+            <div id="Project1">
+                <h2 class="page-header">CROWDSOURCING</h2> 
+                <hr>
+                <h3 class="overview_subtitle" id="intro1">Why we need crowdsourcing?</h3>
+                    <p class="left-vertical-line margin-top-2">
+                        <span class="key-word">Crowdsourcing can solve the limitation of machine learning(visual-based)</span>
+                    </p>
+                    <p class="project-desc">​For version 1.0, we got environmental parameters using machine learning algorithm from Google Map’s street view. But those are through image recognition and visual based, which are inaccessible for people with visual lost. That’s why crowdsourcing is needed in recognizing of not visual based environmental parameters. </p>
+
+                    <p class="left-vertical-line margin-top-2">
+                        <span class="key-word">Crowdsourcing can increase more credibility due to the accuracy of machine learning</span>
+                    </p>
+                    <p class="project-desc">​Even for visual based parameters, as more people join, more information app will have, more precise the app will be. Crowdsourcing can increase more credibility and improve the accuracy of machine learning algorithm.</p>
+
+                    <img style = "width:100%" src="assets/img/align/why crowdsourcing.png" data-action="zoom"><br><br><br><br>
+
+
+
+                <h3 class="overview_subtitle" id="ideation1">COMPETITIVE ANALYSIS</h3> 
+                    <p class="project-desc">​We conducted competitive analysis for crowdsourcing navigation app. Among these, wheelmap and Waze stands out:</p>
+                    <img style = "width:100%" src="assets/img/align/competitive analysis.png"><br><br><br><br>
+
+                <h3 class="overview_subtitle">INFORMATION ARCHITECTURE</h3> 
+                    <p class="left-vertical-line margin-top-2">
+                        <span class="key-word">Challenge: Parameter categories generated by machine learning is a lot and hard for users to choose, does all parameters need crowdsourcing?</span>
+                    </p>
+                    <p class="project-desc">​Some environmental parameters like ‘business density’, ‘safe traffic history’ are hard to get from users’ side. And also some categorizations are too complex. That’s why we started to prioritize and I drew the following mindmap including parameters that were most suitable for crowdsourcing:</p>
+                    <img style = "width:60%" src="assets/img/align/information architecture.png" data-action="zoom"><br><br><br><br><br><br><br>
+
+
+                <h3 class="overview_subtitle" id="design consideration1">DESIGN CONSIDERATION</h3><br><br>
+                    <h4 class="mini-title">Consideration 1: Credibility</h4>
+                        <p class="left-vertical-line margin-top-2">
+                            <span class="key-word">How to balance the credibility in crowdsourcing? Will newly added parameters immediately show on others’ app? </span>
+                        </p>
+                        <p class="project-desc">​If yes, will it lead to low credibility? If all newly added parameters will update the system immediately, and some of it may be added by mistake, does it will greatly affect others and lower the credibility of the provided information? </p>
+                        <p class="project-desc">​If no, will users lack feedback about their action? After users add a new parameter, they expect to see the result of their action. </p><br><br>
+                    <h4 class="mini-title">Decision 1</h4><br>
+                        <p class="project-desc">​For users’ app, they will get update parameters once they add a new one. But for others, check it first before updating. At the beginning when dataset is small, credibility matters more because each one may affect a lot. So manually check before updating. As user number grows, we can have automatically updates such as when three people add same parameters. </p>
+                    <img style = "width:100%" src="assets/img/align/consideration1.png" data-action="zoom"><br><br><br><br><br><br>
+
+                    <h4 class="mini-title">Consideration 2: Parameter Icon Design</h4><br>
+                        <p class="project-desc">​We use red / green to differentiate bad / good parameters. (Good means amenities that can facilitate users’ actions. Bad means parameters that users should be notified to avoid dangerousness)</p>
+                        <img style = "width:60%" src="assets/img/align/consideration2_1.png" data-action="zoom">
+
+                        <p class="left-vertical-line margin-top-2">
+                            <span class="key-word">But for people with color blindness who cannot distinguish red and green, how can they recognize it?</span>
+                        </p>
+                        <p class="project-desc">​Solution: Use extra thumb-up & thumb-down to indicate good & bad parameters.</p>
+                        <img style = "width:60%" src="assets/img/align/consideration2_2.png" data-action="zoom">
+
+                        <p class="left-vertical-line margin-top-2">
+                            <span class="key-word">Quality of crowdsourcing is quantity based. More people join, more credibility the result could be. So how to motivate people to continue reporting?</span>
+                        </p>
+                        <p class="project-desc">​Solution: For each parameter on the map, add the number of people who has been verified.</p>
+                        <img style = "width:60%" src="assets/img/align/consideration2_3.png" data-action="zoom">
+
+                        <p class="left-vertical-line margin-top-2">
+                            <span class="key-word">How to combine these?</span>
+                        </p>
+                        <img style = "width:60%" src="assets/img/align/consideration2_4.png" data-action="zoom">
+
+                        <br><br><br><br><br><br>
+                <h3 class="overview_subtitle" id="final design1">FINAL DESIGN</h3><br><br>
+                    <ul class="row">
+                        <ul class="col-lg-6 col-md-6">
+                            <div class="card">
+                                <div class="gifcontainer">
+                                    <img src="assets/img/align/current parameter.gif">
+                                </div>
+                            </div>
+                        </ul>
+                        <ul class="col-lg-6 col-md-6">
+                            <div class="card-text">
+                                <h4 style="text-align: left; text-transform: uppercase;margin-bottom: 0px;">Verify Current Parameters<br>——</h4>
+                                <p style="text-align: left; padding-bottom: 20px;">Users can verify or add a comment for the existing parameters. Other users can see how many people verified or made comment to get more credibility.</p>
+                            </div>
+                        </ul>
+                    </ul>
+
+                    <ul class="row">
+                        <ul class="col-lg-6 col-md-6">
+                            <div class="card">
+                                <div class="gifcontainer">
+                                    <img src="assets/img/align/add parameter.gif">
+                                </div>
+                            </div>
+                        </ul>
+                        <ul class="col-lg-6 col-md-6">
+                            <div class="card-text">
+                                <h4 style="text-align: left; text-transform: uppercase;margin-bottom: 0px;">Report New Parameters<br>——</h4>
+                                <p style="text-align: left;  padding-bottom: 20px;">Users can report the environmental parameters together. They can also upload image or write a comment for a new parameter.</p>
+                            </div>
+                        </ul>
+                    </ul>
+                    <br><br>
+                 
+                 <h3 class="overview_subtitle">USER FLOW</h3><br><br>
+                    <img style = "width:100%" src="assets/img/align/final design1.png" data-action="zoom">
+                    <img style = "width:100%" src="assets/img/align/final design2.png" data-action="zoom">
+                    <img style = "width:100%" src="assets/img/align/final design3.png" data-action="zoom">
+                    
+
+
             </div>
-    </div>  
+            <br><br><br><br>
+
+            <div id="Project2">
+                <h2 class="page-header">NON-VISUAL UI</h2> 
+                <hr>
+                <h3 class="overview_subtitle" id="intro2">INTRODUCTION</h3>
+                    <h4 class="mini-title">My Contribution</h4>
+                    <p class="project-desc">​We're at the intial stage of Version 3.0. Right now we just finished literature review and competitive analysis. I drew task analysis to emphasize pain points and design consideration at each stage. Our next step is to brainstorm.</p> <br>
+
+                    <h4 class="mini-title">Problem Space</h4>
+                    <p class="project-desc">​How to provide same info and make it accessible for people with visual impairments? Especially under navigation circumstance, how to convey map based information to help them plan the route and aware of potential danger in advance? Most app will involve voice over. But the constraint is that environment is noisy and also map based info is hard to conveyed efficiently.</p><br>
+
+                    <h4 class="mini-title">Solution</h4>
+                    <p class="project-desc">​Combine multiple modalities including voice interaction or haptic feedback that can meet all users’ needs and convey map based information(where I am, what’s around me, navigation notification) efficiently to create a customized navigational experience regardless of ability.</p>
+
+                    <img style = "width:100%" src="assets/img/align/problem.png" data-action="zoom"><br><br><br>
+
+                    <h4 class="mini-title">This project is still being updated. More details to come.</h4><br><br><br><br>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="bottom-nav">
+        <div class="bottom-nav-a nav-left">
+            <a href="InfoNice.html" class="nav-active">PREVIOUS PROJECT: MICROSOFT</a>
+        </div>
+        <div class="bottom-nav-a nav-right">
+            <a href="InfNote.html" class="nav-active">NEXT PROJECT: INFNOTE</a>
+        </div>
+    </div>
+</div>
 </body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.2.0/js/transition.js"></script>
+<script src="assets/js/project.js"></script>
+<script src="assets/js/zoom.js"></script>
 </html>
 

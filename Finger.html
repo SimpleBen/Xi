@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Finger Proximity - Projects</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -8,25 +9,30 @@
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="assets/css/project.css">
 <link rel="stylesheet" href="assets/css/zoom.css">
+<style>
+    .top-img, .bottom-nav, .select:before { background-color:#FAAB73; }
+    .float-nav { background-color:rgba(250, 171, 115, 0.9); }
+    .select { color: #FAAB73 !important; }
 
+</style>
 </head>
 <body>
 
 <div id="project-page">
-
     <div class="top-nav">
         <a href="index.html"><div class="logo"></div></a>
         <div class="nav">
             <a href="index.html" class="nav-active">PORTFOLIO</a>
-            <a>RESUME</a>
-            <a href="index.html#about">ABOUT</a>
+            <a href="about.html">ABOUT</a>
+            <a href="assets/Resume_Xi Chen.pdf" target="_blank">RESUME</a>
         </div>
     </div>
+    <div class="float-nav"></div>
 
     <span class="project-nav-toggle"><i></i></span>
 
     <div id="project-main">
-            <img class="top-img" src="assets/img/finger/overview.png" data-action="zoom">
+            <div class="top-img" style="background-image:url(assets/img/finger/overview.png);"></div>
             <div class="project-narrow-content" >
                 <div id="Overview">
 
@@ -78,13 +84,21 @@
                 <div id="User Study">
                     <h2 class="page-header">USER STUDY</h2>
                     <hr>
-                    <p class="project-desc">I implemented user study interface where the real-time classification results were given and conducted user study to evaluate the accuracy of the whole system. The final accuracy is 97% - 98%.</P>
+                    <p class="project-desc">I implemented user study interface where the real-time classification results were given and conducted user study to evaluate the accuracy of the whole system. The final accuracy is 97% - 98%.</p>
                 </div>
 
             </div>
         </div>
-        <a id ="scrollup"></a>
-    </div>
+        <div class="bottom-nav">
+            <div class="bottom-nav-a nav-left">
+                <a href="Tencent.html" class="nav-active">PREVIOUS PROJECT: INFNOTE</a>
+            </div>
+            <div class="bottom-nav-a nav-right">
+            <a href="about.html" class="nav-active">NEXT: ABOUT ME</a>
+        </div>
+        </div>
+
+</div>
 
 </body>
 

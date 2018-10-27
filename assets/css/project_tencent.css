@@ -78,18 +78,11 @@ img{
 .hidden{
     display: none;
 }
-#project-page {
-    width: 70%;
-    margin: 0 auto;
-    padding: 0px 30px;
-}
+
 #project-main {
     padding: 0px;
     margin-bottom: 50px;
     color: hsla(0,0%,100%,.8);
-}
-.project-narrow-content{
-    padding: 30px 40px;
 }
 
 ul.row {
@@ -136,7 +129,7 @@ ul.row {
     border: 1px solid #DDD;
 }
 
-.project-aside {
+/*.project-aside {
     position: absolute;
     margin-left: -15%;
     opacity: 0;
@@ -154,24 +147,13 @@ ul.row {
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -o-transition: all 1s;
-}
-.project-main-menu li {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-}
+}*/
+
 .project-main-menu li a{
     border-bottom: none;
     text-decoration: none;
 }
-.back-btn{
-    width: 100%;
-    line-height: 12px;
-}
-.menu-ul{
-    padding: 0;
-    margin: 0;
-}
+
 li.font_padding a {
     font-size: 120%;
     font-weight: 400;

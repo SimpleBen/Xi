@@ -63,6 +63,15 @@ img{
     margin-top: 20px;
     margin-left: 25px;
 }
+.float-nav .logo_dark {
+    width: 4em;
+    height: 2em;
+    background: url(../../images/logo_dark.png) no-repeat;
+    background-size: contain;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
 .float-nav .nav {
     position: absolute;
     right: 20px;
@@ -77,6 +86,22 @@ img{
 }
 .float-nav .nav a:hover {
     color: #FFFFFF;
+}
+
+.float-nav .nav_dark {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.float-nav .nav_dark a {
+    color: #6a6a6a;
+    text-decoration: none;
+    border: 0px;
+    font-size: 16px;
+    padding: 0 10px;
+}
+.float-nav .nav_dark a:hover {
+    color: #000000;
 }
 
 ul.row {
@@ -550,7 +575,7 @@ p.left-vertical-line {
     padding-left: 1.6rem;
     border-left-width: 0.4rem;
     border-left-style: solid;
-    border-left-color: #3A98DB;
+    
 }
 
 p.margin-top-2 {
